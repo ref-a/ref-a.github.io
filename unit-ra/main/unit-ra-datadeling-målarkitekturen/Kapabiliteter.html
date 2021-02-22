@@ -108,6 +108,7 @@
 <li><a href="#_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter">2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</a></li>
 <li><a href="#_muliggjørende_kapabiliteter">3. Muliggjørende kapabiliteter</a></li>
 <li><a href="#_informasjonsforvaltningsdomener">4. Informasjonsforvaltningsdomener</a></li>
+<li><a href="#_domener">5. Domener</a></li>
 </ul>
 </div>
 <div id="preamble">
@@ -207,7 +208,7 @@ Kompetanse på bruk av åpne data</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Den som innhenter eller mottar data fra andre aktører.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Innhent data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collect data</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -370,9 +371,8 @@ Rutine for mottak av henvendelser om tilgang til data for å sikre at henvendels
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
+<p class="tableblock">Datatibyder har definisjonsrett og har rettigheter til å behandle data
+Datatilbyder kan sette sammen data som tilbyderen har til et dataprodukt som tilbys datakonsumenter gjennom et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Del  data</p></td>
@@ -383,8 +383,8 @@ Rutine for mottak av henvendelser om tilgang til data for å sikre at henvendels
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avgi data</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Share data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sett opp avtaler, løsninger og tilganger etter henvendelse</p></td>
@@ -493,179 +493,19 @@ Personer som er ansvarlige for virksomhetens prosesser for deling av data må be
 <div class="sect1">
 <h2 id="_muliggjørende_kapabiliteter"><a class="anchor" href="#_muliggjørende_kapabiliteter"></a>3. Muliggjørende kapabiliteter</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Informasjonen som skal forvaltes finnes i en faglig kontekst som vi kaller «domener». Fageksperter bør ha eierskap til begrepsdefinisjoner innen egen domene. Domenene bør også være ansvarlig for forvaltning av egen informasjon. Vi har benyttet EUNIS kapabilitetsmodellen som kilde til definisjon av fagdomener der ansvar for forvaltning av informasjon skal være.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/Muliggjørende%20kapabiliteter.png" alt="Muliggjørende kapabiliteter image">
-</div>
-<div class="title">Figure 3. Muliggjørende kapabiliteter</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Elementer i view for Muliggjørende kapabiliteter</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Muliggjørende kapabiliteter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>AKSJON: NTNU oppdaterer definisjon</mark></p>
-<p class="tableblock">Hva organisasjonen gjør for å sikre at den fremmer og forbedrer sin profil og omdømme regionalt, nasjonalt og internasjonalt. Gjennom publisering av forskning og kompetanse, prestasjoner og oppnåelser til en rekke medier og nettverk, samtidig som de reagerer på direkte henvendelser fra pressen, og maksimerer positiv dekning i media.</p>
-<p class="tableblock">EUNIS: Enabling Capabilities</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjonsforvaltning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktiviteter og tiltak for å sikre best mulig kvalitet, utnytting og sikring av informasjon i en virksomhet [kilde data.norge.no]. Administrert Informasjon inkluderer strukturerte og ustrukturerte data med omfang som definert av retningslinjene for datasikkerhet og datahåndtering.</p>
-<p class="tableblock">EUNIS: Information management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjons-registrering, rettighetsklarering og publisering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON:  NTNU foreslår definisjon</p>
-<p class="tableblock">Hva organisasjonen gjør for å skaffe, vedlikeholde og administrere innhold på tvers av både digitale og fysiske plattformer.</p>
-<p class="tableblock">EUNIS: Enterprise Content Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forvaltning av informasjons- og datasikkerhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å vurdere, merke, overvåke, administrere og vedlikeholde informasjonssikkerhet, og gripe inn / eskalere i tilfelle brudd på informasjonssikkerhetspolitikken. Dette vil omfatte overholdelse av reguleringer, lovgivning og intern risikostyring.</p>
-<p class="tableblock">EUNIS: Information &amp; Data Security Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjons-gjenfinning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å lokalisere, indeksere, katalogisere og publisere informasjon for både intern og ekstern bruk. Dette kan omfatte data som ikke oppbevares av organisasjonen.</p>
-<p class="tableblock">EUNIS: Information Search &amp; discovery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forvaltning av datakvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å sikre at data er korrekte, komplette, oppdaterte og konsistente og har evnen til å støtte de informasjonsformål de brukes til.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Juridiske tjenester</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter som har som mål å sikre tilgjengeligheten av effektive juridiske tjenester.</p>
-<p class="tableblock">EUNIS: Legal services</p></td>
-</tr>
-</tbody>
-</table>
+
 </div>
 </div>
 <div class="sect1">
 <h2 id="_informasjonsforvaltningsdomener"><a class="anchor" href="#_informasjonsforvaltningsdomener"></a>4. Informasjonsforvaltningsdomener</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="_images/Informasjonsforvaltningsdomener.png" alt="Informasjonsforvaltningsdomener image">
+
 </div>
-<div class="title">Figure 4. Informasjonsforvaltningsdomener</div>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Elementer i view for Informasjonsforvaltningsdomener</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjonsforvaltningsdomener</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Strategi og styring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å utvikle og opprettholde et sammenhengende bilde av fremtiden</p>
-<p class="tableblock">EUNIS: Strategy and Governance</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kommersiell aktivitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere kommersiell aktivitet.</p>
-<p class="tableblock">EUNIS: Commerical activity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Undervisning og læring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle kapabiliteter som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere undervisning og læring og studentopplevelsen.</p>
-<p class="tableblock">EUNIS: Teaching and learning</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Leveranse av undervisning og læring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU kommer med oppdatert forslag</p>
-<p class="tableblock">Hva organisasjonen gjør for å velge, allokere og administrere plassering av studenter i lærings- og praksismiljøer utenfor organisasjonen som en del av læreplanen.</p>
-<p class="tableblock">EUNIS: Teaching and Learning Delivery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Undervisnings- og læringsinnhold</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU - Teaching and learning content - NTNU sier "" ?? - mangler?</p>
-<p class="tableblock">EUNIS: Teaching and Learning Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Studieadministrasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter som er rettet mot å håndtere faglige retningslinjer, forskrifter, planlegging og tilhørende tilbakemeldinger fra kunder.</p>
-<p class="tableblock">EUNIS: Student Administration</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Studieplanlegging</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot lærere og administratorer som samarbeider om opprettelse, utvikling, konstruksjon, gjennomgang, godkjenning, vurdering og foredling av pensuminnhold for å oppnå ønskede studentresultater.</p>
-<p class="tableblock">EUNIS: Curriculum Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Student-vurdering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU kommer med definisjon</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere forskning.</p>
-<p class="tableblock">EUNIS: Research</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsproduksjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å gjennomføre og levere selve forskningen.</p>
-<p class="tableblock">EUNIS: Research Delivery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kurratering av forskningsdata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å lagre, dele, bruke og gjenbruke datasett produsert fra forskningsprosjekter, inkludert datasettstyringsplanlegging og kuratering av datasett utover levetiden til enkeltprosjekter.</p>
-<p class="tableblock">EUNIS: Dataset management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsforvaltning og prioritering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å forvalte resultatene fra forskningsprosjekter, inkludert bevaring utover levetiden til enkeltprosjekter.</p>
-<p class="tableblock">EUNIS: Output Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsproduksjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å produsere forskning. Dette er utførelsen av forskningsprosjektet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningspublisering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å publisere forskningsresultater og rapportere resultater.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rapportering av forskningsresultater</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å utvikle og produsere rapporter om forskningsresultater, inkludert de som er nødvendige for å oppfylle kravene fra finansieringsorganer.</p>
-<p class="tableblock">EUNIS: Output Reporting</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Publiseringsforvaltning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å publisere og fremme forskningsresultater, og administrere publikasjonssamlingene sine helhetlig for å maksimere virkningen av dem.</p>
-<p class="tableblock">EUNIS: Publication Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsfinansiering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å skaffe og forvalte midler til å gjennomføre forskningsprosjekter.</p>
-<p class="tableblock">EUNIS: Research funding</p></td>
-</tr>
-</tbody>
-</table>
+<div class="sect1">
+<h2 id="_domener"><a class="anchor" href="#_domener"></a>5. Domener</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 </article>

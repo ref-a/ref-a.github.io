@@ -104,7 +104,7 @@
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_bakgrunn">1. Bakgrunn</a>
+<li><a href="#_introduksjon">1. Introduksjon</a>
 <ul class="sectlevel2">
 <li><a href="#_forankring">1.1. Forankring</a></li>
 <li><a href="#_målgruppe">1.2. Målgruppe</a></li>
@@ -112,64 +112,65 @@
 <li><a href="#_økosystemer_tjenestekjeder_og_tverrgående_prosesser">1.4. Økosystemer, tjenestekjeder og tverrgående prosesser</a></li>
 </ul>
 </li>
-<li><a href="#_målarkitekturen_for_datadeling_i_høyere_utdanning_og_forskning">2. Målarkitekturen for datadeling i høyere utdanning og forskning</a>
+<li><a href="#_metode">2. Metode</a>
 <ul class="sectlevel2">
-<li><a href="#_om_arkitekturprinsippenes_føringer_for_datadeling">2.1. Om arkitekturprinsippenes føringer for datadeling</a></li>
-<li><a href="#_hva_er_datadeling">2.2. Hva er datadeling</a></li>
-<li><a href="#_modeller_for_datadeling">2.3. Modeller for datadeling</a>
-<ul class="sectlevel3">
-<li><a href="#_del_og_innhent_data_verdistrøm">2.3.1. Del og innhent data, verdistrøm</a></li>
+<li><a href="#_hva_er_datadeling">2.1. Hva er datadeling</a></li>
+<li><a href="#_del_og_innhent_data_verdistrøm_for_både_tilbyder_og_konsument_uhf">2.2. Del og innhent data, verdistrøm for både tilbyder og konsument - UHF</a></li>
+<li><a href="#_muliggjørende_kapabiliteter">2.3. Muliggjørende kapabiliteter</a></li>
+<li><a href="#_informasjonsforvaltningsdomener">2.4. Informasjonsforvaltningsdomener</a></li>
+<li><a href="#_domener">2.5. Domener</a></li>
 </ul>
 </li>
-<li><a href="#_kapabiliteter">2.4. Kapabiliteter</a>
+<li><a href="#_datadelingsplattformen_og_felles_komponentene_i_den">3. Datadelingsplattformen og felles komponentene i den</a>
+<ul class="sectlevel2">
+<li><a href="#_modeller_for_datadeling">3.1. Modeller for datadeling</a></li>
+<li><a href="#_kapabiliteter">3.2. Kapabiliteter</a>
 <ul class="sectlevel3">
-<li><a href="#_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter">2.4.1. Innhent data, detaljert verdistrøm konsument med kapabiliteter</a></li>
-<li><a href="#_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter">2.4.2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</a></li>
-<li><a href="#_muliggjørende_kapabiliteter">2.4.3. Muliggjørende kapabiliteter</a></li>
-<li><a href="#_informasjonsforvaltningsdomener">2.4.4. Informasjonsforvaltningsdomener</a></li>
+<li><a href="#_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter">3.2.1. Innhent data, detaljert verdistrøm konsument med kapabiliteter</a></li>
+<li><a href="#_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter">3.2.2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</a></li>
+<li><a href="#_muliggjørende_kapabiliteter_2">3.2.3. Muliggjørende kapabiliteter</a></li>
+<li><a href="#_informasjonsforvaltningsdomener_2">3.2.4. Informasjonsforvaltningsdomener</a></li>
+<li><a href="#_domener_2">3.2.5. Domener</a></li>
 </ul>
 </li>
-<li><a href="#_felleskomponenter">2.5. Felleskomponenter</a></li>
-<li><a href="#_datautveksling">2.6. Datautveksling</a>
+<li><a href="#_felleskomponenter">3.3. Felleskomponenter</a></li>
+<li><a href="#_datautveksling">3.4. Datautveksling</a>
 <ul class="sectlevel3">
-<li><a href="#_datautveksling_ved_oppslag">2.6.1. Datautveksling ved oppslag</a>
+<li><a href="#_datautveksling_ved_oppslag">3.4.1. Datautveksling ved oppslag</a>
 <ul class="sectlevel4">
-<li><a href="#_applikasjonsoversikt_forespørsel">2.6.1.1. Applikasjonsoversikt forespørsel</a></li>
-<li><a href="#_applikasjonsoversikt_forespørsel_integrert_med_iam">2.6.1.2. Applikasjonsoversikt forespørsel integrert med IAM</a></li>
-<li><a href="#_applikasjonsoversikt_forespørsel_integrert_nasjonalt">2.6.1.3. Applikasjonsoversikt forespørsel integrert nasjonalt</a></li>
-<li><a href="#_registrere_api_uhf">2.6.1.4. Registrere API UHF</a></li>
-<li><a href="#_tilgjengeliggjøre_data_etter_forspørsel_løsningsmønster_uhf">2.6.1.5. Tilgjengeliggjøre data etter forspørsel løsningsmønster UHF</a></li>
-<li><a href="#_få_tilgang_til_data_løsningsmønster_uhf">2.6.1.6. Få tilgang til data - løsningsmønster UHF</a></li>
-<li><a href="#_innhente_data_løsningsmønster_uhf">2.6.1.7. Innhente data - løsningsmønster UHF</a></li>
-<li><a href="#_avgi_data_løsningsmønster_uhf">2.6.1.8. Avgi data - løsningsmønster UHF</a></li>
+<li><a href="#_dataobjekter_eoppslag_uhf">3.4.1.1. Dataobjekter eOppslag UHF</a></li>
+<li><a href="#_føderert_api_management">3.4.1.2. Føderert API management</a></li>
+<li><a href="#_api_management_integrert_med_iam">3.4.1.3. API management integrert med IAM</a></li>
+<li><a href="#_api_management_integrert_med_nasjonale_felleskomponenter">3.4.1.4. API management integrert med nasjonale felleskomponenter</a></li>
+<li><a href="#_publiser_api">3.4.1.5. Publiser API</a></li>
+<li><a href="#_tilgjengeliggjøre_data_etter_forsepørsel_løsningsmønster_uhf">3.4.1.6. Tilgjengeliggjøre data etter forsepørsel løsningsmønster UHF</a></li>
+<li><a href="#_få_tilgang_til_data_løsningsmønster_uhf">3.4.1.7. Få tilgang til data - løsningsmønster UHF</a></li>
+<li><a href="#_innhente_data_løsningsmønster_uhf">3.4.1.8. Innhente data - løsningsmønster UHF</a></li>
+<li><a href="#_avgi_data_løsningsmønster_uhf">3.4.1.9. Avgi data - løsningsmønster UHF</a></li>
 </ul>
 </li>
-<li><a href="#_datautveksling_ved_publisering_konsumering_hendelsesbasert">2.6.2. Datautveksling ved publisering – konsumering (hendelsesbasert)</a></li>
+<li><a href="#_datautveksling_ved_publisering_konsumering_hendelsesbasert">3.4.2. Datautveksling ved publisering – konsumering (hendelsesbasert)</a></li>
 </ul>
 </li>
-<li><a href="#_integrasjonsmønster_for_datadeling">2.7. Integrasjonsmønster for datadeling</a></li>
+<li><a href="#_integrasjonsmønster_for_datadeling">3.5. Integrasjonsmønster for datadeling</a></li>
 </ul>
 </li>
-<li><a href="#_forvaltning_av_målarkitekturen">3. Forvaltning av målarkitekturen</a>
+<li><a href="#_forvaltning_av_målarkitekturen">4. Forvaltning av målarkitekturen</a>
 <ul class="sectlevel2">
-<li><a href="#_utvikling_av_brukernære_api_og_datasett">3.1. Utvikling av brukernære API og datasett</a>
+<li><a href="#_utvikling_av_brukernære_api_og_datasett">4.1. Utvikling av brukernære API og datasett</a>
 <ul class="sectlevel3">
-<li><a href="#_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api">3.1.1. Forutsetninger for arbeid med definisjon av datasett og API</a></li>
-<li><a href="#_rutinen_for_nye_brukernære_behov">3.1.2. Rutinen for nye brukernære behov</a></li>
+<li><a href="#_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api">4.1.1. Forutsetninger for arbeid med definisjon av datasett og API</a></li>
+<li><a href="#_rutinen_for_nye_brukernære_behov">4.1.2. Rutinen for nye brukernære behov</a></li>
 </ul>
 </li>
-<li><a href="#_roller_og_ansvar_for_informasjonsforvaltning">3.2. Roller og ansvar for informasjonsforvaltning</a></li>
+<li><a href="#_roller_og_ansvar_for_informasjonsforvaltning">4.2. Roller og ansvar for informasjonsforvaltning</a></li>
 </ul>
 </li>
-<li><a href="#_vedlegg_1_definisjoner">4. Vedlegg 1 - Definisjoner</a>
+<li><a href="#_vedlegg_1_definisjoner">5. Vedlegg 1 - Definisjoner</a></li>
+<li><a href="#_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst">6. Vedlegg 2 - Behov for avklaringer og utfordringer i sektorens kontekst</a>
 <ul class="sectlevel2">
-<li><a href="#_definisjoner">4.1. Definisjoner</a></li>
-</ul>
-</li>
-<li><a href="#_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst">5. Vedlegg 2 - Behov for avklaringer og utfordringer i sektorens kontekst</a>
-<ul class="sectlevel2">
-<li><a href="#_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon">5.1. Issues mot nasjonale felleskompontenter (Maskinporten, ID Porten og Altinn autorisasjon)</a></li>
-<li><a href="#_issues_internt_i_uhf_sektor">5.2. Issues internt i UHF sektor</a></li>
+<li><a href="#_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon">6.1. Issues mot nasjonale felleskompontenter (Maskinporten, ID Porten og Altinn autorisasjon)</a></li>
+<li><a href="#_issues_internt_i_uhf_sektor">6.2. Issues internt i UHF sektor</a></li>
 </ul>
 </li>
 </ul>
@@ -181,14 +182,13 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Sat Feb 20 2021 23:33:05 GMT+0100 (CET)
-Erik Hagen 	erik.hagen@digdir.no</pre>
+<pre>Mon Feb 22 2021 16:13:02 GMT+0100 (CET)</pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_bakgrunn"><a class="anchor" href="#_bakgrunn"></a>1. Bakgrunn</h2>
+<h2 id="_introduksjon"><a class="anchor" href="#_introduksjon"></a>1. Introduksjon</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Økt deling av data er en forutsetning for å realisere flere av
@@ -271,7 +271,7 @@ med prosjektdeltagelse fra Unit, NTNU, UiO og Uninett. Styringsgruppen
 består av medlemmer fra Unit, UiB, OsloMet, USIT, NMBU og Uninett.</p>
 </div>
 <div class="paragraph">
-<p>Noe om forankring av referansearkitekturen</p>
+<p>Noe om forankring av referansearkitekturen (test)</p>
 </div>
 </div>
 <div class="sect2">
@@ -407,31 +407,16 @@ referansearkitekturen skal dekke.</p>
 <div class="sect2">
 <h3 id="_økosystemer_tjenestekjeder_og_tverrgående_prosesser"><a class="anchor" href="#_økosystemer_tjenestekjeder_og_tverrgående_prosesser"></a>1.4. Økosystemer, tjenestekjeder og tverrgående prosesser</h3>
 <div class="paragraph">
-<p><mark>input fra tjenestedesignprosess rundt muliggjørende økosystem</mark></p>
+<p><mark>input fra tjenestedesignprosess rundt muliggjørende økosystem (NB script test)</mark></p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_målarkitekturen_for_datadeling_i_høyere_utdanning_og_forskning"><a class="anchor" href="#_målarkitekturen_for_datadeling_i_høyere_utdanning_og_forskning"></a>2. Målarkitekturen for datadeling i høyere utdanning og forskning</h2>
+<h2 id="_metode"><a class="anchor" href="#_metode"></a>2. Metode</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_om_arkitekturprinsippenes_føringer_for_datadeling"><a class="anchor" href="#_om_arkitekturprinsippenes_føringer_for_datadeling"></a>2.1. Om arkitekturprinsippenes føringer for datadeling</h3>
-<div class="paragraph">
-<p>Pek til
-<a href="https://www.digdir.no/digitalisering-og-samordning/overordnede-arkitekturprinsipper/1065">overordnede arkitekturprinsippene</a> fra digitaliseringsdirektoratet og hva de betyr
-her.</p>
-</div>
-<div class="paragraph">
-<p><mark>Trenger vi noen justeringer av prinsippene?</mark></p>
-</div>
-<div class="paragraph">
-<p>Si noe om UH-IntArk prinsippene og forhold til de overordnede
-arkitekturprinsippene</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_hva_er_datadeling"><a class="anchor" href="#_hva_er_datadeling"></a>2.2. Hva er datadeling</h3>
+<h3 id="_hva_er_datadeling"><a class="anchor" href="#_hva_er_datadeling"></a>2.1. Hva er datadeling</h3>
 <div class="paragraph">
 <p>Følgende definisjon for datadeling er hentet fra
 Digitaliseringsdirektoratets
@@ -456,7 +441,28 @@ for <strong><em>deling og innhenting av data og hendelser</em></strong>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_modeller_for_datadeling"><a class="anchor" href="#_modeller_for_datadeling"></a>2.3. Modeller for datadeling</h3>
+<h3 id="_del_og_innhent_data_verdistrøm_for_både_tilbyder_og_konsument_uhf"><a class="anchor" href="#_del_og_innhent_data_verdistrøm_for_både_tilbyder_og_konsument_uhf"></a>2.2. Del og innhent data, verdistrøm for både tilbyder og konsument - UHF</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_muliggjørende_kapabiliteter"><a class="anchor" href="#_muliggjørende_kapabiliteter"></a>2.3. Muliggjørende kapabiliteter</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_informasjonsforvaltningsdomener"><a class="anchor" href="#_informasjonsforvaltningsdomener"></a>2.4. Informasjonsforvaltningsdomener</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_domener"><a class="anchor" href="#_domener"></a>2.5. Domener</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_datadelingsplattformen_og_felles_komponentene_i_den"><a class="anchor" href="#_datadelingsplattformen_og_felles_komponentene_i_den"></a>3. Datadelingsplattformen og felles komponentene i den</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_modeller_for_datadeling"><a class="anchor" href="#_modeller_for_datadeling"></a>3.1. Modeller for datadeling</h3>
 <div class="paragraph">
 <p>Når datatilbydere og datakonsumenter deler data, skjer det som en del av
 en digital samhandling. For at samhandlingen skal være vellykket, må
@@ -479,110 +485,11 @@ hjelper dermed de som benytter modellene til å lykkes med digital
 samhandling.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://nasjonal-arkitektur.github.io/architecture-repository/about-topic-areas/about-topic-areas.html">Nasjonale
-referansearkitekturer innen datadeling og datautveksling</a> er fremdeles
-under utvikling. Vi gjenbruker her noen av modellene uendret, og
-tilpasser noen for høyere utdanning og forskning. Den overordnede
-verdistrømmen for datadeling og relaterte kapabiliteter <mark>avbildet under</mark>
-er uendret.</p>
-</div>
-<div class="sect3">
-<h4 id="_del_og_innhent_data_verdistrøm"><a class="anchor" href="#_del_og_innhent_data_verdistrøm"></a>2.3.1. Del og innhent data, verdistrøm</h4>
-<div class="paragraph">
-<p><mark>TODO (Erik): Beskrivelse av Del og innhent data, verdistrøm + hvert steg</mark></p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Del%20og%20innhent%20data,%20verdistrøm.png" alt="Del og innhent data" width="verdistrøm image">
-</div>
-<div class="title">Figure 1. Del og innhent data, verdistrøm</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Elementer i view for Del og innhent data, verdistrøm</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Del  data</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tilrettelegg for dataoppdagelse og datadeling</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avgi data</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sett opp avtaler, løsninger og tilganger etter henvendelse</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Motta henvendelser om datadeling</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ta rede på egne data og krav til datadeling</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forbedre løsninger, sikkerhet og datakvalitet (tilbyder)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data-konsument</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Den som innhenter eller mottar data fra andre aktører.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Innhent data</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oppdag data og datakilder</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Be  om tilganger og abonnementer</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forespør og motta data</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Etabler avtaler og løsninger for datainnhenting</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ta rede på behov for innhenting av data</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forbedre løsninger, sikkerhet og datakvalitet (konsument)</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://www.digdir.no/apne-data/nasjonal-verktoykasse-deling-av-data/2243">Verktøykassen for deling av data</a> inneholder den overordnende modell for datadeling og kapabilitetene som datatilbydere og datakonsumenter trenger for å dele data. Vi legger disse modellene til grunn.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_kapabiliteter"><a class="anchor" href="#_kapabiliteter"></a>2.4. Kapabiliteter</h3>
+<h3 id="_kapabiliteter"><a class="anchor" href="#_kapabiliteter"></a>3.2. Kapabiliteter</h3>
 <div class="paragraph">
 <p>Som vist i <mark>figuren over</mark>, må datatilbyderen ha oversikt over egne data
 som skal deles og evne til å publisere datasettene slik at andre kan
@@ -607,15 +514,15 @@ muliggjørende kapabilitet for å støtte opp under juridisk
 samhandlingsevne.</p>
 </div>
 <div class="sect3">
-<h4 id="_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter"><a class="anchor" href="#_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter"></a>2.4.1. Innhent data, detaljert verdistrøm konsument med kapabiliteter</h4>
+<h4 id="_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter"><a class="anchor" href="#_innhent_data_detaljert_verdistrøm_konsument_med_kapabiliteter"></a>3.2.1. Innhent data, detaljert verdistrøm konsument med kapabiliteter</h4>
 <div class="imageblock">
 <div class="content">
 <img src="../unit-ra-datadeling-målarkitekturen/_images/Innhent%20data,%20detaljert%20verdistrøm%20konsument%20med%20kapabiliteter.png" alt="Innhent data" width="detaljert verdistrøm konsument med kapabiliteter image">
 </div>
-<div class="title">Figure 2. Innhent data, detaljert verdistrøm konsument med kapabiliteter</div>
+<div class="title">Figure 1. Innhent data, detaljert verdistrøm konsument med kapabiliteter</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Elementer i view for Innhent data, detaljert verdistrøm konsument med kapabiliteter</caption>
+<caption class="title">Table 1. Elementer i view for Innhent data, detaljert verdistrøm konsument med kapabiliteter</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -675,7 +582,7 @@ Kompetanse på bruk av åpne data</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Den som innhenter eller mottar data fra andre aktører.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Innhent data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collect data</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
@@ -743,7 +650,7 @@ Rutiner for riktig behandling av data i henhold til utleveringsavtale. Dette gje
 </table>
 </div>
 <div class="sect3">
-<h4 id="_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter"><a class="anchor" href="#_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter"></a>2.4.2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</h4>
+<h4 id="_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter"><a class="anchor" href="#_del_og_innhent_data_og_hendelser_detaljert_verdistrøm_datatilbyder_med_kapabiliteter"></a>3.2.2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</h4>
 <div class="paragraph">
 <p>Forklaring:
 Datatilbyder må evne å bestemme hvilken teknisk løsning som skal benyttes når dataene gjøres tilgjengelig som åpne data</p>
@@ -765,10 +672,10 @@ Prosesser for å dele data som åpne data</p>
 <div class="content">
 <img src="../unit-ra-datadeling-målarkitekturen/_images/Del%20og%20innhent%20data%20og%20hendelser,%20detaljert%20verdistrøm%20datatilbyder%20med%20kapabiliteter.png" alt="Del og innhent data og hendelser" width="detaljert verdistrøm datatilbyder med kapabiliteter image">
 </div>
-<div class="title">Figure 3. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</div>
+<div class="title">Figure 2. Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Elementer i view for Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</caption>
+<caption class="title">Table 2. Elementer i view for Del og innhent data og hendelser, detaljert verdistrøm datatilbyder med kapabiliteter</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -836,9 +743,8 @@ Rutine for mottak av henvendelser om tilgang til data for å sikre at henvendels
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
+<p class="tableblock">Datatibyder har definisjonsrett og har rettigheter til å behandle data
+Datatilbyder kan sette sammen data som tilbyderen har til et dataprodukt som tilbys datakonsumenter gjennom et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Del  data</p></td>
@@ -849,8 +755,8 @@ Rutine for mottak av henvendelser om tilgang til data for å sikre at henvendels
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avgi data</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Share data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Del data (operativt)" handler om utveksling av data gjennom etablerte kanaler og iht. avtaler. Dette forutsetter også håndtering av avvik og ikke-tilsiktede hendelser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sett opp avtaler, løsninger og tilganger etter henvendelse</p></td>
@@ -956,182 +862,20 @@ Personer som er ansvarlige for virksomhetens prosesser for deling av data må be
 </table>
 </div>
 <div class="sect3">
-<h4 id="_muliggjørende_kapabiliteter"><a class="anchor" href="#_muliggjørende_kapabiliteter"></a>2.4.3. Muliggjørende kapabiliteter</h4>
-<div class="paragraph">
-<p>Informasjonen som skal forvaltes finnes i en faglig kontekst som vi kaller «domener». Fageksperter bør ha eierskap til begrepsdefinisjoner innen egen domene. Domenene bør også være ansvarlig for forvaltning av egen informasjon. Vi har benyttet EUNIS kapabilitetsmodellen som kilde til definisjon av fagdomener der ansvar for forvaltning av informasjon skal være.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Muliggjørende%20kapabiliteter.png" alt="Muliggjørende kapabiliteter image">
-</div>
-<div class="title">Figure 4. Muliggjørende kapabiliteter</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Elementer i view for Muliggjørende kapabiliteter</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Muliggjørende kapabiliteter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>AKSJON: NTNU oppdaterer definisjon</mark></p>
-<p class="tableblock">Hva organisasjonen gjør for å sikre at den fremmer og forbedrer sin profil og omdømme regionalt, nasjonalt og internasjonalt. Gjennom publisering av forskning og kompetanse, prestasjoner og oppnåelser til en rekke medier og nettverk, samtidig som de reagerer på direkte henvendelser fra pressen, og maksimerer positiv dekning i media.</p>
-<p class="tableblock">EUNIS: Enabling Capabilities</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjonsforvaltning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktiviteter og tiltak for å sikre best mulig kvalitet, utnytting og sikring av informasjon i en virksomhet [kilde data.norge.no]. Administrert Informasjon inkluderer strukturerte og ustrukturerte data med omfang som definert av retningslinjene for datasikkerhet og datahåndtering.</p>
-<p class="tableblock">EUNIS: Information management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjons-registrering, rettighetsklarering og publisering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON:  NTNU foreslår definisjon</p>
-<p class="tableblock">Hva organisasjonen gjør for å skaffe, vedlikeholde og administrere innhold på tvers av både digitale og fysiske plattformer.</p>
-<p class="tableblock">EUNIS: Enterprise Content Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forvaltning av informasjons- og datasikkerhet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å vurdere, merke, overvåke, administrere og vedlikeholde informasjonssikkerhet, og gripe inn / eskalere i tilfelle brudd på informasjonssikkerhetspolitikken. Dette vil omfatte overholdelse av reguleringer, lovgivning og intern risikostyring.</p>
-<p class="tableblock">EUNIS: Information &amp; Data Security Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjons-gjenfinning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å lokalisere, indeksere, katalogisere og publisere informasjon for både intern og ekstern bruk. Dette kan omfatte data som ikke oppbevares av organisasjonen.</p>
-<p class="tableblock">EUNIS: Information Search &amp; discovery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forvaltning av datakvalitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å sikre at data er korrekte, komplette, oppdaterte og konsistente og har evnen til å støtte de informasjonsformål de brukes til.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Juridiske tjenester</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter som har som mål å sikre tilgjengeligheten av effektive juridiske tjenester.</p>
-<p class="tableblock">EUNIS: Legal services</p></td>
-</tr>
-</tbody>
-</table>
+<h4 id="_muliggjørende_kapabiliteter_2"><a class="anchor" href="#_muliggjørende_kapabiliteter_2"></a>3.2.3. Muliggjørende kapabiliteter</h4>
+
 </div>
 <div class="sect3">
-<h4 id="_informasjonsforvaltningsdomener"><a class="anchor" href="#_informasjonsforvaltningsdomener"></a>2.4.4. Informasjonsforvaltningsdomener</h4>
-<div class="imageblock">
-<div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Informasjonsforvaltningsdomener.png" alt="Informasjonsforvaltningsdomener image">
+<h4 id="_informasjonsforvaltningsdomener_2"><a class="anchor" href="#_informasjonsforvaltningsdomener_2"></a>3.2.4. Informasjonsforvaltningsdomener</h4>
+
 </div>
-<div class="title">Figure 5. Informasjonsforvaltningsdomener</div>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Elementer i view for Informasjonsforvaltningsdomener</caption>
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 75%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Element</th>
-<th class="tableblock halign-left valign-top">Beskrivelse</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Informasjonsforvaltningsdomener</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Strategi og styring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å utvikle og opprettholde et sammenhengende bilde av fremtiden</p>
-<p class="tableblock">EUNIS: Strategy and Governance</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kommersiell aktivitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere kommersiell aktivitet.</p>
-<p class="tableblock">EUNIS: Commerical activity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Undervisning og læring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle kapabiliteter som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere undervisning og læring og studentopplevelsen.</p>
-<p class="tableblock">EUNIS: Teaching and learning</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Leveranse av undervisning og læring</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU kommer med oppdatert forslag</p>
-<p class="tableblock">Hva organisasjonen gjør for å velge, allokere og administrere plassering av studenter i lærings- og praksismiljøer utenfor organisasjonen som en del av læreplanen.</p>
-<p class="tableblock">EUNIS: Teaching and Learning Delivery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Undervisnings- og læringsinnhold</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU - Teaching and learning content - NTNU sier "" ?? - mangler?</p>
-<p class="tableblock">EUNIS: Teaching and Learning Content</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Studieadministrasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter som er rettet mot å håndtere faglige retningslinjer, forskrifter, planlegging og tilhørende tilbakemeldinger fra kunder.</p>
-<p class="tableblock">EUNIS: Student Administration</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Studieplanlegging</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot lærere og administratorer som samarbeider om opprettelse, utvikling, konstruksjon, gjennomgang, godkjenning, vurdering og foredling av pensuminnhold for å oppnå ønskede studentresultater.</p>
-<p class="tableblock">EUNIS: Curriculum Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Student-vurdering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">AKSJON: NTNU kommer med definisjon</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper som kreves for å sikre at organisasjonen er i stand til å utvikle, levere, støtte og administrere forskning.</p>
-<p class="tableblock">EUNIS: Research</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsproduksjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å gjennomføre og levere selve forskningen.</p>
-<p class="tableblock">EUNIS: Research Delivery</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kurratering av forskningsdata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å lagre, dele, bruke og gjenbruke datasett produsert fra forskningsprosjekter, inkludert datasettstyringsplanlegging og kuratering av datasett utover levetiden til enkeltprosjekter.</p>
-<p class="tableblock">EUNIS: Dataset management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsforvaltning og prioritering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å forvalte resultatene fra forskningsprosjekter, inkludert bevaring utover levetiden til enkeltprosjekter.</p>
-<p class="tableblock">EUNIS: Output Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsproduksjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å produsere forskning. Dette er utførelsen av forskningsprosjektet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningspublisering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å publisere forskningsresultater og rapportere resultater.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rapportering av forskningsresultater</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å utvikle og produsere rapporter om forskningsresultater, inkludert de som er nødvendige for å oppfylle kravene fra finansieringsorganer.</p>
-<p class="tableblock">EUNIS: Output Reporting</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Publiseringsforvaltning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva organisasjonen gjør for å publisere og fremme forskningsresultater, og administrere publikasjonssamlingene sine helhetlig for å maksimere virkningen av dem.</p>
-<p class="tableblock">EUNIS: Publication Management</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forskningsfinansiering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Alle aktiviteter rettet mot å skaffe og forvalte midler til å gjennomføre forskningsprosjekter.</p>
-<p class="tableblock">EUNIS: Research funding</p></td>
-</tr>
-</tbody>
-</table>
+<div class="sect3">
+<h4 id="_domener_2"><a class="anchor" href="#_domener_2"></a>3.2.5. Domener</h4>
+
 </div>
 </div>
 <div class="sect2">
-<h3 id="_felleskomponenter"><a class="anchor" href="#_felleskomponenter"></a>2.5. Felleskomponenter</h3>
+<h3 id="_felleskomponenter"><a class="anchor" href="#_felleskomponenter"></a>3.3. Felleskomponenter</h3>
 <div class="paragraph">
 <p><mark>(i sektoren hittil har «felles» betyd både at alle bruker samme instans,
 eller at alle har identiske instanser – vi må presisere hva som er
@@ -1176,24 +920,136 @@ kompontenene</mark></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_datautveksling"><a class="anchor" href="#_datautveksling"></a>2.6. Datautveksling</h3>
+<h3 id="_datautveksling"><a class="anchor" href="#_datautveksling"></a>3.4. Datautveksling</h3>
 <div class="paragraph">
 <p>Med utgangspunkt i
 <a href="https://nasjonal-arkitektur.github.io/architecture-repository/data-exchange-ra/book-data-exchange-ra.html">Referansearkitektur
 for datautveksling</a> beskriv de mønstrene som vi bruker</p>
 </div>
 <div class="sect3">
-<h4 id="_datautveksling_ved_oppslag"><a class="anchor" href="#_datautveksling_ved_oppslag"></a>2.6.1. Datautveksling ved oppslag</h4>
+<h4 id="_datautveksling_ved_oppslag"><a class="anchor" href="#_datautveksling_ved_oppslag"></a>3.4.1. Datautveksling ved oppslag</h4>
 <div class="sect4">
-<h5 id="_applikasjonsoversikt_forespørsel"><a class="anchor" href="#_applikasjonsoversikt_forespørsel"></a>2.6.1.1. Applikasjonsoversikt forespørsel</h5>
+<h5 id="_dataobjekter_eoppslag_uhf"><a class="anchor" href="#_dataobjekter_eoppslag_uhf"></a>3.4.1.1. Dataobjekter eOppslag UHF</h5>
 <div class="imageblock">
 <div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Applikasjonsoversikt%20forespørsel.png" alt="Applikasjonsoversikt forespørsel image">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/Dataobjekter%20eOppslag%20UHF.png" alt="Dataobjekter eOppslag UHF image">
 </div>
-<div class="title">Figure 6. Applikasjonsoversikt forespørsel</div>
+<div class="title">Figure 3. Dataobjekter eOppslag UHF</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Elementer i view for Applikasjonsoversikt forespørsel</caption>
+<caption class="title">Table 3. Elementer i view for Dataobjekter eOppslag UHF</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Element</th>
+<th class="tableblock halign-left valign-top">Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API-katalogen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API-katalogen er en del av Felles datakatalog som inneholder API-beskrivelser med endepunktsadresser og kobling til datasett.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilganger konsument/representasjonsforhold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som beskriver hvilke tilganger til ressurser en representant (leverandør) skal ha på vegne av konsument.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delegerbar ressurs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som beskriver en ressurs, f.eks. et API, som det kan gis rettigheter til gjennom et representasjonsforhold.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endepunkt (adresse)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som representerer teknisk adresse til et API eller ressurs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Maskinporten er en løsning for tilgangsstyring for virksomheter som utveksler data. Løsningen garanterer identiteten mellom virksomheter, og sørger for maskin-til-maskin autentisering.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.</p>
+<p class="tableblock">Mer om Maskinporten:
+<a href="https://www.digdir.no/digitale-felleslosninger/maskinporten/869" class="bare">https://www.digdir.no/digitale-felleslosninger/maskinporten/869</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
+Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
+autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
+<p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
+<p class="tableblock">Mer om Altinn autorisasjon:
+<a href="https://www.altinndigital.no/produkter/styring-av-tilgang/" class="bare">https://www.altinndigital.no/produkter/styring-av-tilgang/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse API</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som er en maskinlesbar beskrivelse av REST API-er iht. Open API Specification. Dette er formatet som benyttes for å registrere et API i felles API-katalog</p>
+<p class="tableblock">Ønsker å bruke Open API spesifikasjon</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OAUTH scopes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En OAuth Scope er en mekanisme for å begrense konsumentens tilgang til datasettet eksponert gjennom et API. Foreløpig er dette grovkornet tilgangskontroll som for eksempel lese eller skrivetilgang til datasettet. Standardsorganet IETF jobber med å spesifisere mer fingranulert tilgangsmekanismer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskrivelse av aktør som kan innhente samtykke</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som beskriver en datakonsument som har rett til å innhente samtykke om å slå opp data.
+Viktig innholde er bl.a. URL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="_føderert_api_management"><a class="anchor" href="#_føderert_api_management"></a>3.4.1.2. Føderert API management</h5>
+<div class="paragraph">
+<p>Føderert API Management innebærer at et domene kan gi brukere i andre domener som man har et tillitsforhold til, ofte kalt fødereringspartnere, tilgang til sine egne data gjennom APIer. Dette er en tilnærming til API Management som har etablert seg de siste årene.  Det er flere grunner for dette, blant annet at store virksomheter i dag gjerne har virksomhetsdata lagret distribuert og gjerne fordelt mellom systemer som kjører på lokale servere (on-premise) og i skybaserte-løsninger.</p>
+</div>
+<div class="paragraph">
+<p>Det er et sterkt politisk fokus på deling av data mellom domener. Flere initiativer, som "orden i eget hus" og nasjonale og sektorvise digitaliseringsstrategier skal understøtte dette fokuset på deling av data. I en slik sammenheng ser vi behovet for et felles API Management-regime i kunnskapssektoren.</p>
+</div>
+<div class="paragraph">
+<p>Et slikt regime muliggjør deling av data for å oppnå sammenhengende brukerreiser, eksemplifisert ved de syv livshendelser og tjenestekjeder.  Det er en forutsetning at data kan deles mellom virksomheter som betjener slike brukerreiser.</p>
+</div>
+<div class="paragraph">
+<p>3.parts aktører kan bruke data fra sektoren for innovasjon. API management kan medvirke til deling av data til 3. part ved å gjøre data gjenfinnbart, tilgjengelig og dokumentert.</p>
+</div>
+<div class="paragraph">
+<p>Virksomhetene i Universiteter, Høyskoler og Forskning har mange fellestrekk og noen fellestjenester på tvers. Deres autonomi gjør likevel at de er ulike på enkelte områder, for eksempel når det gjelder teknisk infrastruktur.  Disse likhetene og forskjellene understreker behovet for en føderert API Management-løsning.  En slik løsning er mer fleksibel med tanke på tekniske løsninger og produktvalg lokalt.</p>
+</div>
+<div class="paragraph">
+<p>Designen avbildet er laget for å støtte følgende karakteristikk:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Intstitusjonene er sikret råderett over egne data gjennom tilgangstjeneste i ressursportalen og API gateway hos institusjonen som kan styre og holde oversikt over datatilgang</p>
+</li>
+<li>
+<p>Institusjonene har valgfrihet over API Gateway såfremt funksjoner og grensesnitt er ivaretatt</p>
+</li>
+<li>
+<p>Deling av data på tvers av institusjoner er støttet gjennom felles ressursportal</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/Føderert%20API%20management.png" alt="Føderert API management image">
+</div>
+<div class="title">Figure 4. Føderert API management</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Elementer i view for Føderert API management</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1207,7 +1063,7 @@ for datautveksling</a> beskriv de mønstrene som vi bruker</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Infrastruktur</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Felleskomponenter i UHF-infrastrukturen for datadeling</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tokentjeneste</p></td>
@@ -1215,62 +1071,76 @@ for datautveksling</a> beskriv de mønstrene som vi bruker</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportal</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportalen holder oversikt over og tildeler tilganger til beskyttede ressurser i høyere utdanning og forskningssektoren i henhold til føringer fra eierne av disse ressursene. Tilganger er gitt i form av OAuth2 grants og tokens. Ressursportalen er en del av den felles infrastrukturen for føderert API management for høyere utdanning og forskning. Den registrerer og holder oversikt over API, holder oversikt over klienter som har blitt tildelt tilgang til API og hvilke tilganger det gjelder. Ressursportalen benytter Jason Web Token formattert OAuth2 sikkerhetstoken for å gi tilgang til ressurser gjennom API gateway nær de beskyttede ressursene.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
-Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Klientregister</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Klientregister</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF API manager</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API. Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener. Ansvaret til API manager inkluderer:</p>
-<p class="tableblock">* Sentralisert API administrasjon og forvaltning av API-katalogen
-* Håndtering av registrerings- og introduksjonsprosesser for API utviklere
-* Håndtere livssyklusen til et API</p>
-<p class="tableblock">Ivareta registrering, forvaltning og og utvikling av klientrettigheter</p>
-<p class="tableblock">Hva tilbyr API av datamodell
-Hvordan ønsker API å sikre seg selv
-En klient må forholde seg til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API.
+Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener.</p>
+<p class="tableblock">Ansvaret til API manager inkluderer:</p>
+<p class="tableblock">  * Sentralisert API Gateway som håndterer sikkerhetsretningslinjer, og sender kall til bakenforliggende API
+  * Sentralisert publisering av API spesifikasjon (OpenAPI/RAML), dokumentasjon
+  * Sentralisert API administrasjon og forvaltning av API-katalogen
+  * Håndtering av registrerings- og introduksjonsprosesser for API utviklere
+  * Håndtere livssyklusen til et API, uvikling, test, utrulling, nye versjoner, nedlegging
+  * Ivareta registrering, forvaltning og og utvikling av klientrettigheter
+  * Rapportering og analyse for å monitorere bruk og last</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F API katalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert i UH/F sektoren</p>
+<p class="tableblock">UH/F API katalog kan inneholde</p>
+<p class="tableblock">  * Navn på API
+  * Tekstlig beskrivelse av API
+  * Informasjonsmodell / Datamodell for API som tilbys
+  * Kildeinformasjon for data, begrepsinformasjon
+  * Informasjon om tilgang, juridiske og tekniske begrensinger for bruk
+  * Eksempelkode, interaktiv API-konsoll og sandkasse for test
+  * Informasjon om hvordan få support og hjelp fra utsteder</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UHF sektoren</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UH/F sektoren</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Programtjeneste for å registrere og vedlikeholde API som er tilgjengelige i Universitets og Høyskole-sektoren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F tildel rettigheter til klienter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tildel autoriserte rettigheter basert på roller, annen policy eller manuell behandling av dataforvalter gjennom tjenesten "Forespør dataforvalter". Om klienten er fra UH/F sektoren blir tildelt rettighetene lagret i UH/F klientregisteret i Ressusportalen. Om klienten er fra utenfor UH/F sektoren må tildelte rettighetene lagres et sted der Maskinporten har oversikten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UiX</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos datatilbyder / OAuth resource server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang.
+Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll.
+Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
 <p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
-Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
-Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
-Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+<p class="tableblock">  *  Validere tilgangstoken
+  *  Beskytte mot inntrenging og andre trusler
+  * Håndtere volumbegrensninger og andre abonnementsordninger
+  * Håndheve tilgangsstyring
+  * Samle inn data om bruken av API-er
+  * Orkestrering mellom interntjenester</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UiO</p></td>
@@ -1278,41 +1148,74 @@ Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos datatilbyder / OAuth resource server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang.
+Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll.
+Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
 <p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
-Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
-Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
-Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+<p class="tableblock">  *  Validere tilgangstoken
+  *  Beskytte mot inntrenging og andre trusler
+  * Håndtere volumbegrensninger og andre abonnementsordninger
+  * Håndheve tilgangsstyring
+  * Samle inn data om bruken av API-er
+  * Orkestrering mellom interntjenester</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_applikasjonsoversikt_forespørsel_integrert_med_iam"><a class="anchor" href="#_applikasjonsoversikt_forespørsel_integrert_med_iam"></a>2.6.1.2. Applikasjonsoversikt forespørsel integrert med IAM</h5>
+<h5 id="_api_management_integrert_med_iam"><a class="anchor" href="#_api_management_integrert_med_iam"></a>3.4.1.3. API management integrert med IAM</h5>
+<div class="paragraph">
+<p>Infrastruktur for identitetshåndtering og tilgangsstyring (IAM) utfyller API management og må
+fungere sammen.</p>
+</div>
+<div class="paragraph">
+<p>Autentisering er det som sjekker at brukeren er kjent for virksomhenten og forsikrer
+at brukeren er den vedkommende gir seg ut for å være når brukeren ber om tilgang til ressurser.</p>
+</div>
+<div class="paragraph">
+<p>Autorisering identifiserer hvilke tilganger en bruker skal ha til virksomhetens ressurser.
+Autorisasjon kan tildeles roller. Brukere kan tildeles roller og gjennom dette få
+autorisasjon til virksomhetens ressurser som er knyttet til rollen.</p>
+</div>
+<div class="paragraph">
+<p>IAM utfører autentisering ved bruk av komponenter i den øvre delen av viewet.</p>
+</div>
+<div class="paragraph">
+<p>API management utføres av komponenter i den nedre delen av viewet.</p>
+</div>
+<div class="paragraph">
+<p>Ressursportalen og tjenesten for tildeling av rettigheter til klienter deltar i begge funksjoner.</p>
+</div>
+<div class="paragraph">
+<p>IAM autoriserer sluttbrukeres tilgang til tjenester. Dette er basert på både autentisering
+av deres identitet, det vil si hvem brukeren er, og de roller brukeren er tildelt hos en
+eller flere institusjoner.</p>
+</div>
+<div class="paragraph">
+<p>API management styrer tilgang til data gjennom API basert på policy eller godkjenning
+fra dataforvalter. Brukers tilgang til beskyttet tjeneste hos datakonsument kan være
+tilstrekkelig til at bruker ikke trenger å autoriseres eksplisitt hos datatilbyder. Avgjørelsen om å godkjenne tilgang til data kan godt være basert på
+en sluttbrukers rolle hos en institusjon.
+​</p>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Applikasjonsoversikt%20forespørsel%20integrert%20med%20IAM.png" alt="Applikasjonsoversikt forespørsel integrert med IAM image">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/API%20management%20integrert%20med%20IAM.png" alt="API management integrert med IAM image">
 </div>
-<div class="title">Figure 7. Applikasjonsoversikt forespørsel integrert med IAM</div>
+<div class="title">Figure 5. API management integrert med IAM</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Elementer i view for Applikasjonsoversikt forespørsel integrert med IAM</caption>
+<caption class="title">Table 5. Elementer i view for API management integrert med IAM</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1325,76 +1228,81 @@ Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sluttbruker</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datakonsument</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Komponenter som utgjør datakonsument, det vil si Universitetet, Høyskolens eller andre, sitt grensesnitt for datadeling</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klient</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sluttbruker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personen som skal tildeles tilgang til beskyttede ressurser basert på identitet, roller og annen kontekst.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beskyttet tjeneste / klient hos datakonsument</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som IAM beskytter tilgang til. Tjenesten kan også være en konsument av data gjennom API, det vil si Universitet, Høyskole eller andre som gir tilgang til data fra datatilbyder.</p>
+<p class="tableblock">Komponenten tilbyr:
+  * autentisering  gjennom en Autentiseringstjeneste
+  * oppslag i felleskomponeneter for tilgang til datatilbyders dataprodukter
+  * tilgang til ressurser hos datatilbyder</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identitetstilbyder</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En identitetstilbyder er en virksomhet som er godkjent til å utstede elektroniske identiteter for entydig identifikasjon av en fysisk person på et gitt sikkerhetsnivå.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Infrastruktur</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Felleskomponenter i UHF-infrastrukturen for datadeling</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportal</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportalen holder oversikt over og tildeler tilganger til beskyttede ressurser i høyere utdanning og forskningssektoren i henhold til føringer fra eierne av disse ressursene. Tilganger er gitt i form av OAuth2 grants og tokens. Ressursportalen er en del av den felles infrastrukturen for føderert API management for høyere utdanning og forskning. Den registrerer og holder oversikt over API, holder oversikt over klienter som har blitt tildelt tilgang til API og hvilke tilganger det gjelder. Ressursportalen benytter Jason Web Token formattert OAuth2 sikkerhetstoken for å gi tilgang til ressurser gjennom API gateway nær de beskyttede ressursene.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Roller og tilgangsregler</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisjon av roller som blir brukt til å styre autorisasjon for å gi tilgang for en klient til et eller flere API.
+Definisjon av regler for tilgang til et eller flere API</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Attributter /grunndata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attributter / grunndata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysninger om personer som skal benyttes i tilgangsstyring.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
-Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Klientregister</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Klientregister</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F tildel rettigheter til klienter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tildel autoriserte rettigheter basert på roller, annen policy eller manuell behandling av dataforvalter gjennom tjenesten "Forespør dataforvalter". Om klienten er fra UH/F sektoren blir tildelt rettighetene lagret i UH/F klientregisteret i Ressusportalen. Om klienten er fra utenfor UH/F sektoren må tildelte rettighetene lagres et sted der Maskinporten har oversikten.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UiX</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UiX / Datatilbyder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Komponenter som utgjør datatilbyder, det vil si Universitetet eller Høyskolens, grensesnitt for datadeling</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataprodukt som tilbys av datatilbyder
+Produktet kan være fra en kilde eller sammensatt av flere innen et domene</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos datatilbyder / OAuth resource server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang.
+Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll.
+Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
 <p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
-Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
-Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
-Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+<p class="tableblock">  *  Validere tilgangstoken
+  *  Beskytte mot inntrenging og andre trusler
+  * Håndtere volumbegrensninger og andre abonnementsordninger
+  * Håndheve tilgangsstyring
+  * Samle inn data om bruken av API-er
+  * Orkestrering mellom interntjenester</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Autentiseringstjeneste</p></td>
@@ -1404,15 +1312,24 @@ Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_applikasjonsoversikt_forespørsel_integrert_nasjonalt"><a class="anchor" href="#_applikasjonsoversikt_forespørsel_integrert_nasjonalt"></a>2.6.1.3. Applikasjonsoversikt forespørsel integrert nasjonalt</h5>
+<h5 id="_api_management_integrert_med_nasjonale_felleskomponenter"><a class="anchor" href="#_api_management_integrert_med_nasjonale_felleskomponenter"></a>3.4.1.4. API management integrert med nasjonale felleskomponenter</h5>
+<div class="paragraph">
+<p>​​Det er behov for datadeling og API Management på tvers av sektorer. Høyere utdanning og forskning ønsker utstrakt bruk av nasjonale felleskomponenter, som omtalt i Digitaliseringsrundskrivet. For å oppnå dette må både sektorens og den nasjonale infrastrukturen videreutvikles.​</p>
+</div>
+<div class="paragraph">
+<p>Føderert tilgangsstyring for datadeling på tvers av sektorer er ønskelig, og det krever blant annet standardisering av tilgangstokens for å oppnå gjennomgående tillitskjeder. ​Det er også ønskelig at brukere kan styre samtykke til sine data fra et sted nasjonalt, inklusivt til data i kilder i høyere utdanning og forskning. Det hadde vært ønskelig om en felles Norsk samtykketjeneste kunne være integrert med funksjonalitet som vi forvente skal realiseres i IAM løsningent til høyere utdanning og forskning.</p>
+</div>
+<div class="paragraph">
+<p>Figuren viser kun kobling til maskinporten direkte som er mulig i dag.  Det er planlagt automatisert høsting av API katalogen fra høyere utdanning og forskning til Felles API-katalog som visst i figuren. Samtykke til kilder i vår sektor fra Altinn autorisasjon er foreløpig ikke imlementert, så ingen kobling til Altinn autorisasjon er visst i figuren. ​</p>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Applikasjonsoversikt%20forespørsel%20integrert%20nasjonalt.png" alt="Applikasjonsoversikt forespørsel integrert nasjonalt image">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/API%20management%20integrert%20med%20nasjonale%20felleskomponenter.png" alt="API management integrert med nasjonale felleskomponenter image">
 </div>
-<div class="title">Figure 8. Applikasjonsoversikt forespørsel integrert nasjonalt</div>
+<div class="title">Figure 6. API management integrert med nasjonale felleskomponenter</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Elementer i view for Applikasjonsoversikt forespørsel integrert nasjonalt</caption>
+<caption class="title">Table 6. Elementer i view for API management integrert med nasjonale felleskomponenter</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1426,68 +1343,78 @@ Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Infrastruktur</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Felleskomponenter i UHF-infrastrukturen for datadeling</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tokentjeneste</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som utsteder sikkerhetsbilletter. Sikkerhetsbillett utstedes basert på tildelte rettigheter og eventuelle representasjonsforhold.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UHF sektoren</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UH/F sektoren</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Programtjeneste for å registrere og vedlikeholde API som er tilgjengelige i Universitets og Høyskole-sektoren</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F tildel rettigheter til klienter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tildel autoriserte rettigheter basert på roller, annen policy eller manuell behandling av dataforvalter gjennom tjenesten "Forespør dataforvalter". Om klienten er fra UH/F sektoren blir tildelt rettighetene lagret i UH/F klientregisteret i Ressusportalen. Om klienten er fra utenfor UH/F sektoren må tildelte rettighetene lagres et sted der Maskinporten har oversikten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportal</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportalen holder oversikt over og tildeler tilganger til beskyttede ressurser i høyere utdanning og forskningssektoren i henhold til føringer fra eierne av disse ressursene. Tilganger er gitt i form av OAuth2 grants og tokens. Ressursportalen er en del av den felles infrastrukturen for føderert API management for høyere utdanning og forskning. Den registrerer og holder oversikt over API, holder oversikt over klienter som har blitt tildelt tilgang til API og hvilke tilganger det gjelder. Ressursportalen benytter Jason Web Token formattert OAuth2 sikkerhetstoken for å gi tilgang til ressurser gjennom API gateway nær de beskyttede ressursene.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
-Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Klientregister</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Klientregister</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF API manager</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API. Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener. Ansvaret til API manager inkluderer:</p>
-<p class="tableblock">* Sentralisert API administrasjon og forvaltning av API-katalogen
-* Håndtering av registrerings- og introduksjonsprosesser for API utviklere
-* Håndtere livssyklusen til et API</p>
-<p class="tableblock">Ivareta registrering, forvaltning og og utvikling av klientrettigheter</p>
-<p class="tableblock">Hva tilbyr API av datamodell
-Hvordan ønsker API å sikre seg selv
-En klient må forholde seg til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API.
+Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener.</p>
+<p class="tableblock">Ansvaret til API manager inkluderer:</p>
+<p class="tableblock">  * Sentralisert API Gateway som håndterer sikkerhetsretningslinjer, og sender kall til bakenforliggende API
+  * Sentralisert publisering av API spesifikasjon (OpenAPI/RAML), dokumentasjon
+  * Sentralisert API administrasjon og forvaltning av API-katalogen
+  * Håndtering av registrerings- og introduksjonsprosesser for API utviklere
+  * Håndtere livssyklusen til et API, uvikling, test, utrulling, nye versjoner, nedlegging
+  * Ivareta registrering, forvaltning og og utvikling av klientrettigheter
+  * Rapportering og analyse for å monitorere bruk og last</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F API katalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert i UH/F sektoren</p>
+<p class="tableblock">UH/F API katalog kan inneholde</p>
+<p class="tableblock">  * Navn på API
+  * Tekstlig beskrivelse av API
+  * Informasjonsmodell / Datamodell for API som tilbys
+  * Kildeinformasjon for data, begrepsinformasjon
+  * Informasjon om tilgang, juridiske og tekniske begrensinger for bruk
+  * Eksempelkode, interaktiv API-konsoll og sandkasse for test
+  * Informasjon om hvordan få support og hjelp fra utsteder</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nasjonal infrastruktur</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nasjonale felleskomponenter for datadeling</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Maskinporten er en løsning for tilgangsstyring for virksomheter som utveksler data. Løsningen garanterer identiteten mellom virksomheter, og sørger for maskin-til-maskin autentisering.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
 virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.</p>
 <p class="tableblock">Mer om Maskinporten:
 <a href="https://www.digdir.no/digitale-felleslosninger/maskinporten/869" class="bare">https://www.digdir.no/digitale-felleslosninger/maskinporten/869</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Torget:
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
-<p class="tableblock">Verktøykasse for deling av data:
+<p class="tableblock">[Verktøykasse for deling av data]
 Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
 autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
 <p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
@@ -1502,21 +1429,21 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 </table>
 </div>
 <div class="sect4">
-<h5 id="_registrere_api_uhf"><a class="anchor" href="#_registrere_api_uhf"></a>2.6.1.4. Registrere API UHF</h5>
+<h5 id="_publiser_api"><a class="anchor" href="#_publiser_api"></a>3.4.1.5. Publiser API</h5>
 <div class="paragraph">
-<p>En arbeidsflyt som datatilbyder må gjennomføre for å gjøre et API synlig og tilgjengelig gjennom kataloger og søkeløsninger. Metadata om APIet blir registrert i API-katalogen. Metadata inkluderer begreper og datamodeller omfattet av datasettet som APIet tilgjengeliggjør, samt tilganger (scopes) knyttet til APIet som kan tildeles konsumenter.</p>
+<p>En prosessflyt som datatilbyder må gjennomføre for å gjøre et API synlig og tilgjengelig gjennom kataloger og søkeløsninger. Metadata om APIet blir registrert i API-katalogen. Metadata inkluderer begreper og datamodeller omfattet av datasettet som APIet tilgjengeliggjør, samt tilganger (scopes) knyttet til APIet som kan tildeles konsumenter.</p>
 </div>
 <div class="paragraph">
-<p>Kanskje omdøpe kapabiliteten til "Publiser API"</p>
+<p>APIet registrert i UHF API katalog blir høstet inn i Felles API katalog. Vi ønsker at tilganger (scopes) skal i tillegg registreres i Maskinporten slik at konsumenter utenfor UHF sektoren kan oppdage APIet og be om tilgang på et senere tidspunkt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Registrere%20API%20UHF.png" alt="Registrere API UHF image">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/Publiser%20API.png" alt="Publiser API image">
 </div>
-<div class="title">Figure 9. Registrere API UHF</div>
+<div class="title">Figure 7. Publiser API</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. Elementer i view for Registrere API UHF</caption>
+<caption class="title">Table 7. Elementer i view for Publiser API</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1530,8 +1457,7 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OAUTH scopes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hvordan får Dataobjekt som som kan beskrives som en ressurs-definisjon, og et token er som regel knyttet til ett eller flere scopes. Scopes benyttes til å styre tilganger til API-er og operasjoner, samt eventuelt hva slags responser man får fra API-er.</p>
-<p class="tableblock">Fra eHelse: Regler for et API som beskriver hvilke tilganger en datakonsument (representert ved organisasjonsnummer) og deres klienter skal ha tilgang til (utstedt token for).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En OAuth Scope er en mekanisme for å begrense konsumentens tilgang til datasettet eksponert gjennom et API. Foreløpig er dette grovkornet tilgangskontroll som for eksempel lese eller skrivetilgang til datasettet. Standardsorganet IETF jobber med å spesifisere mer fingranulert tilgangsmekanismer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Token-egenskaper</p></td>
@@ -1540,20 +1466,22 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
+<p class="tableblock">Datatibyder har definisjonsrett og har rettigheter til å behandle data
+Datatilbyder kan sette sammen data som tilbyderen har til et dataprodukt som tilbys datakonsumenter gjennom et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Maskinporten er en løsning for tilgangsstyring for virksomheter som utveksler data. Løsningen garanterer identiteten mellom virksomheter, og sørger for maskin-til-maskin autentisering.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
 virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.</p>
 <p class="tableblock">Mer om Maskinporten:
 <a href="https://www.digdir.no/digitale-felleslosninger/maskinporten/869" class="bare">https://www.digdir.no/digitale-felleslosninger/maskinporten/869</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UHF sektoren</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UH/F sektoren</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Programtjeneste for å registrere og vedlikeholde API som er tilgjengelige i Universitets og Høyskole-sektoren</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API Beskrivelse</p></td>
@@ -1567,8 +1495,8 @@ Tjeneste "administrasjonssentre" vil ha rettigheter til å registrere på vegne 
 Definere hvilke scopes finnes koblet til et API</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Publiser API</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å gjøre et API synlig og tilgjengelig gjennom kataloger og søkeløsninger slik at det kan oppdages av potensielle konsumenter.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API</p></td>
@@ -1580,35 +1508,45 @@ Definere hvilke scopes finnes koblet til et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF API manager</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API. Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener. Ansvaret til API manager inkluderer:</p>
-<p class="tableblock">* Sentralisert API administrasjon og forvaltning av API-katalogen
-* Håndtering av registrerings- og introduksjonsprosesser for API utviklere
-* Håndtere livssyklusen til et API</p>
-<p class="tableblock">Ivareta registrering, forvaltning og og utvikling av klientrettigheter</p>
-<p class="tableblock">Hva tilbyr API av datamodell
-Hvordan ønsker API å sikre seg selv
-En klient må forholde seg til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API.
+Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener.</p>
+<p class="tableblock">Ansvaret til API manager inkluderer:</p>
+<p class="tableblock">  * Sentralisert API Gateway som håndterer sikkerhetsretningslinjer, og sender kall til bakenforliggende API
+  * Sentralisert publisering av API spesifikasjon (OpenAPI/RAML), dokumentasjon
+  * Sentralisert API administrasjon og forvaltning av API-katalogen
+  * Håndtering av registrerings- og introduksjonsprosesser for API utviklere
+  * Håndtere livssyklusen til et API, uvikling, test, utrulling, nye versjoner, nedlegging
+  * Ivareta registrering, forvaltning og og utvikling av klientrettigheter
+  * Rapportering og analyse for å monitorere bruk og last</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F API katalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert i UH/F sektoren</p>
+<p class="tableblock">UH/F API katalog kan inneholde</p>
+<p class="tableblock">  * Navn på API
+  * Tekstlig beskrivelse av API
+  * Informasjonsmodell / Datamodell for API som tilbys
+  * Kildeinformasjon for data, begrepsinformasjon
+  * Informasjon om tilgang, juridiske og tekniske begrensinger for bruk
+  * Eksempelkode, interaktiv API-konsoll og sandkasse for test
+  * Informasjon om hvordan få support og hjelp fra utsteder</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_tilgjengeliggjøre_data_etter_forspørsel_løsningsmønster_uhf"><a class="anchor" href="#_tilgjengeliggjøre_data_etter_forspørsel_løsningsmønster_uhf"></a>2.6.1.5. Tilgjengeliggjøre data etter forspørsel løsningsmønster UHF</h5>
+<h5 id="_tilgjengeliggjøre_data_etter_forsepørsel_løsningsmønster_uhf"><a class="anchor" href="#_tilgjengeliggjøre_data_etter_forsepørsel_løsningsmønster_uhf"></a>3.4.1.6. Tilgjengeliggjøre data etter forsepørsel løsningsmønster UHF</h5>
 <div class="paragraph">
-<p>En arbeidsflyt som datatilbyder må gjennomføre for å tildele rettigheter til en konsument som ber om tilgang til data. En datatilbyder mottar forespørsel om tilgang til et API på vegne av en organisasjon eller bruker. Dataeieren tar stilling til om konsumenten skal få tilgang til data gjennom APIet. Tilgang registreres knyttet til konsumentens klient (applikasjonen som benytter APIet) i klientregisteret.</p>
+<p>En prosessflyt som datatilbyder må gjennomføre for å tildele rettigheter til en konsument som ber om tilgang til data. En datatilbyder mottar forespørsel om tilgang til et API på vegne av en organisasjon eller bruker. Dataeieren tar stilling til om konsumenten skal få tilgang til data gjennom APIet. Tilgang registreres knyttet til konsumentens klient (applikasjonen som benytter APIet) i klientregisteret.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../unit-ra-datadeling-målarkitekturen/_images/Tilgjengeliggjøre%20data%20etter%20forspørsel%20løsningsmønster%20UHF.png" alt="Tilgjengeliggjøre data etter forspørsel løsningsmønster UHF image">
+<img src="../unit-ra-datadeling-målarkitekturen/_images/Tilgjengeliggjøre%20data%20etter%20forsepørsel%20løsningsmønster%20UHF.png" alt="Tilgjengeliggjøre data etter forsepørsel løsningsmønster UHF image">
 </div>
-<div class="title">Figure 10. Tilgjengeliggjøre data etter forspørsel løsningsmønster UHF</div>
+<div class="title">Figure 8. Tilgjengeliggjøre data etter forsepørsel løsningsmønster UHF</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Elementer i view for Tilgjengeliggjøre data etter forspørsel løsningsmønster UHF</caption>
+<caption class="title">Table 8. Elementer i view for Tilgjengeliggjøre data etter forsepørsel løsningsmønster UHF</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1622,14 +1560,13 @@ En klient må forholde seg til</p></td>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilganger konsument</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over hvilke API og OAUTH-scopes en virksomhet (representert ved organisasjonsnummer) skal ha tilgang til (utstedt token for).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over tilganger gitt til konsumenter utenfor UHF sektoren tildelt gjennom Maskinporten. Oversikten spesifiserer hvilke API og OAUTH-scopes en virksomhet (representert ved organisasjonsnummer) skal ha tilgang til (utstedt token for).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
+<p class="tableblock">Datatibyder har definisjonsrett og har rettigheter til å behandle data
+Datatilbyder kan sette sammen data som tilbyderen har til et dataprodukt som tilbys datakonsumenter gjennom et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilgjengeliggjør data etter forselpørsel</p></td>
@@ -1638,7 +1575,7 @@ En klient må forholde seg til</p></td>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tildele tilganger til API</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Prosess for å registrere hvilke databrukere som skal få tilgang
-Sette policy, og grov tilgangsstyring gjennom maskinporten.</p></td>
+Sette policy, og grov tilgangsstyring.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inngå avtale om tilgang til data</p></td>
@@ -1651,17 +1588,20 @@ Sette policy, og grov tilgangsstyring gjennom maskinporten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Maskinporten er en løsning for tilgangsstyring for virksomheter som utveksler data. Løsningen garanterer identiteten mellom virksomheter, og sørger for maskin-til-maskin autentisering.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
 virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.</p>
 <p class="tableblock">Mer om Maskinporten:
 <a href="https://www.digdir.no/digitale-felleslosninger/maskinporten/869" class="bare">https://www.digdir.no/digitale-felleslosninger/maskinporten/869</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Torget:
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
-<p class="tableblock">Verktøykasse for deling av data:
+<p class="tableblock">[Verktøykasse for deling av data]
 Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
 autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
 <p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
@@ -1670,7 +1610,8 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registrere samtykkebasert tilgang</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for å registerer konsumenter som kan innhente samtykke som gir grunnlag for utlevering fra datatilbyder.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for å registerer konsumenter som kan innhente samtykke som gir grunnlag for utlevering fra datatilbyder.</p>
+<p class="tableblock">Tjenesten tilbyr i dag ikke samtykke til UHF sektorens datakilder integrert i tjenesten. Dette er ønsket funksjonaltet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aktører som kan innhente samtykke for bruk av API</p></td>
@@ -1679,7 +1620,7 @@ URL til konsumenten det kan innhentes samtykke for må inngå i beskrivelsen.</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilgjengeliggjøre data etter forespørsel</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å gjøre data tilgjengelig for aktører utenfor egen virksomhet på forespørsel.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API tilgangs-forespørsel</p></td>
@@ -1687,37 +1628,39 @@ URL til konsumenten det kan innhentes samtykke for må inngå i beskrivelsen.</p
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Godkjenn tilgang</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for å vurdere og eventuelt gi tilgang til en konsument som ber om tilgang. En tjeneste i UHF Ressursportalen benyttes som lar dataforvalteren beslutte tilgang, enten gjennom en automatisert policy eller gjennom en manuell behandling.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F tildel rettigheter til klienter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tildel autoriserte rettigheter basert på roller, annen policy eller manuell behandling av dataforvalter gjennom tjenesten "Forespør dataforvalter". Om klienten er fra UH/F sektoren blir tildelt rettighetene lagret i UH/F klientregisteret i Ressusportalen. Om klienten er fra utenfor UH/F sektoren må tildelte rettighetene lagres et sted der Maskinporten har oversikten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportal</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportalen holder oversikt over og tildeler tilganger til beskyttede ressurser i høyere utdanning og forskningssektoren i henhold til føringer fra eierne av disse ressursene. Tilganger er gitt i form av OAuth2 grants og tokens. Ressursportalen er en del av den felles infrastrukturen for føderert API management for høyere utdanning og forskning. Den registrerer og holder oversikt over API, holder oversikt over klienter som har blitt tildelt tilgang til API og hvilke tilganger det gjelder. Ressursportalen benytter Jason Web Token formattert OAuth2 sikkerhetstoken for å gi tilgang til ressurser gjennom API gateway nær de beskyttede ressursene.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Forespør dataeier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Harmoniserers med rolledefinisjoner.</p>
-<p class="tableblock">Kan en databehandler besvare forespørselen automatisk på grunnlag av forhåndsdefinerte instruks?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Forespør dataforvalter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En tjeneste som lar dataforvalteren beslutte datatilgang, enten gjennom en automatisert policy eller gjennom en manuell behandling.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_få_tilgang_til_data_løsningsmønster_uhf"><a class="anchor" href="#_få_tilgang_til_data_løsningsmønster_uhf"></a>2.6.1.6. Få tilgang til data - løsningsmønster UHF</h5>
+<h5 id="_få_tilgang_til_data_løsningsmønster_uhf"><a class="anchor" href="#_få_tilgang_til_data_løsningsmønster_uhf"></a>3.4.1.7. Få tilgang til data - løsningsmønster UHF</h5>
 <div class="paragraph">
-<p>En arbeidsflyt en konsument av data må gjennomføre for å få tildelt rettigheter til data gjennom et API. Det omfatter å få kjennskap til aktuelt API gjennom API-katalogen, autentisere konsumenten, inngå avtale om bruk av data, samt å registrere tilganger hos den tekniske komponenten som skal utføre tjenestekallet. Dersom det dreier seg om tilgang til et åpent tilgjengelig API, kan enkelte delaktiviteter i prosessene hoppes over, men for å kunne logge informasjon om bruk av APIer bør alle konsumenter av et API registreres i klientregisteret.</p>
+<p>En prosessflyt en konsument av data må gjennomføre for å få tildelt rettigheter til data gjennom et API. Det omfatter å få kjennskap til aktuelt API gjennom API-katalogen, autentisere konsumenten, inngå avtale om bruk av data, samt å registrere tilganger hos den tekniske komponenten som skal utføre tjenestekallet. Dersom det dreier seg om tilgang til et åpent tilgjengelig API, kan enkelte delaktiviteter i prosessene hoppes over, men for å kunne logge informasjon om bruk av APIer bør alle konsumenter av et API registreres i klientregisteret.</p>
+</div>
+<div class="paragraph">
+<p>Viewet bør strengt tatt vise at konsumenten kan finne APIet enten i UH/F sektorens API katalog eller i Felles datakatalog. Vi velger å vise prosessflyten kun med UH/F sektorens komponenter både for å kunne presentere en oversiktlig prosessflyt og fordi forholdet til de nasjonale felleskomponenter er ennå ikke helt avklart.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../unit-ra-datadeling-målarkitekturen/_images/Få%20tilgang%20til%20data%20-%20løsningsmønster%20UHF.png" alt="Få tilgang til data - løsningsmønster UHF image">
 </div>
-<div class="title">Figure 11. Få tilgang til data - løsningsmønster UHF</div>
+<div class="title">Figure 9. Få tilgang til data - løsningsmønster UHF</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Elementer i view for Få tilgang til data - løsningsmønster UHF</caption>
+<caption class="title">Table 9. Elementer i view for Få tilgang til data - løsningsmønster UHF</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1768,50 +1711,54 @@ URL til konsumenten det kan innhentes samtykke for må inngå i beskrivelsen.</p
 <td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å skaffe seg tilgang til tilbudte data fra annen aktør.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F API katalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert i UH/F sektoren</p>
+<p class="tableblock">UH/F API katalog kan inneholde</p>
+<p class="tableblock">  * Navn på API
+  * Tekstlig beskrivelse av API
+  * Informasjonsmodell / Datamodell for API som tilbys
+  * Kildeinformasjon for data, begrepsinformasjon
+  * Informasjon om tilgang, juridiske og tekniske begrensinger for bruk
+  * Eksempelkode, interaktiv API-konsoll og sandkasse for test
+  * Informasjon om hvordan få support og hjelp fra utsteder</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F tildel rettigheter til klienter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tildel autoriserte rettigheter basert på roller, annen policy eller manuell behandling av dataforvalter gjennom tjenesten "Forespør dataforvalter". Om klienten er fra UH/F sektoren blir tildelt rettighetene lagret i UH/F klientregisteret i Ressusportalen. Om klienten er fra utenfor UH/F sektoren må tildelte rettighetene lagres et sted der Maskinporten har oversikten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API tilgangs-forespørsel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API eieren får forespørsel om den vil gi konsumenten tilgang til APIet.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
-Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Klientregister</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Klientregister</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OAUTH scopes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hvordan får Dataobjekt som som kan beskrives som en ressurs-definisjon, og et token er som regel knyttet til ett eller flere scopes. Scopes benyttes til å styre tilganger til API-er og operasjoner, samt eventuelt hva slags responser man får fra API-er.</p>
-<p class="tableblock">Fra eHelse: Regler for et API som beskriver hvilke tilganger en datakonsument (representert ved organisasjonsnummer) og deres klienter skal ha tilgang til (utstedt token for).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En OAuth Scope er en mekanisme for å begrense konsumentens tilgang til datasettet eksponert gjennom et API. Foreløpig er dette grovkornet tilgangskontroll som for eksempel lese eller skrivetilgang til datasettet. Standardsorganet IETF jobber med å spesifisere mer fingranulert tilgangsmekanismer.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_innhente_data_løsningsmønster_uhf"><a class="anchor" href="#_innhente_data_løsningsmønster_uhf"></a>2.6.1.7. Innhente data - løsningsmønster UHF</h5>
+<h5 id="_innhente_data_løsningsmønster_uhf"><a class="anchor" href="#_innhente_data_løsningsmønster_uhf"></a>3.4.1.8. Innhente data - løsningsmønster UHF</h5>
 <div class="paragraph">
-<p>En arbeidsflyt en konsument utfører når det utføres et tjenestekall for å innhente data gjennom et API. API-adressen hentes i API-katalogen. Tilgang til APIet byttes inn mot et kjøretids-token i autoriseringstjenesten. Tjenestekall til APIet utføres gjennom API gateway der tokenet benyttes for å få tilgang. Dersom det er et åpent API er det kun relevante prossessteg som utføres.</p>
+<p>En prosessflyt en konsument utfører når det utføres et tjenestekall for å innhente data gjennom et API. API-adressen hentes i API-katalogen. Tilgang til APIet byttes inn mot et kjøretids-token i autoriseringstjenesten. Tjenestekall til APIet utføres gjennom API gateway der tokenet benyttes for å få tilgang. Dersom det er et åpent API er det kun relevante prossessteg som utføres.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../unit-ra-datadeling-målarkitekturen/_images/Innhente%20data%20-%20løsningsmønster%20UHF.png" alt="Innhente data - løsningsmønster UHF image">
 </div>
-<div class="title">Figure 12. Innhente data - løsningsmønster UHF</div>
+<div class="title">Figure 10. Innhente data - løsningsmønster UHF</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Elementer i view for Innhente data - løsningsmønster UHF</caption>
+<caption class="title">Table 10. Elementer i view for Innhente data - løsningsmønster UHF</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1824,8 +1771,68 @@ underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p>
 </thead>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Infrastruktur</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datautvekslings-tjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for utveksling av data over aktuell transportprotokoll, f.eks, gjennom asynkrone medlinger eller synkrone API-oppslag.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Samtykkeregistererings-tjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for å innhente samtykke fra den registrert som dataene gjelder. Dette kan være en person eller en virksomhet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adressetjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som gir mulighet til å slå opp teknisk endepunkt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Virksomhetssertifikat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En virksomhets elektroniske ID. Benyttes for å autentisere virksomheten overfor tokentjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tokentjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som utsteder sikkerhetsbilletter. Sikkerhetsbillett utstedes basert på tildelte rettigheter og eventuelle representasjonsforhold.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oppslag representasjons-forhold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som benyttes av tokentjenesten for å kontrollere om det foreligger et delegert representasjonsforhold fra konsument til leverendør i autorisasjonstjenesten til Altinn.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tilganger konsument</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over tilganger gitt til konsumenter utenfor UHF sektoren tildelt gjennom Maskinporten. Oversikten spesifiserer hvilke API og OAUTH-scopes en virksomhet (representert ved organisasjonsnummer) skal ha tilgang til (utstedt token for).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F Oauth2 autorisasjonstjener</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjenester realiserer tilgangskontroll gjennom å utstede OAuth 2 grants og tokens.
+En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">UH/F API katalog</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert i UH/F sektoren</p>
+<p class="tableblock">UH/F API katalog kan inneholde</p>
+<p class="tableblock">  * Navn på API
+  * Tekstlig beskrivelse av API
+  * Informasjonsmodell / Datamodell for API som tilbys
+  * Kildeinformasjon for data, begrepsinformasjon
+  * Informasjon om tilgang, juridiske og tekniske begrensinger for bruk
+  * Eksempelkode, interaktiv API-konsoll og sandkasse for test
+  * Informasjon om hvordan få support og hjelp fra utsteder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endepunkt (adresse)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som representerer teknisk adresse til et API eller ressurs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nasjonal Infrastruktur</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
+Maskinporten er en løsning for tilgangsstyring for virksomheter som utveksler data. Løsningen garanterer identiteten mellom virksomheter, og sørger for maskin-til-maskin autentisering.</p>
+<p class="tableblock">[Verktøykasse for deling av data]
+Maskinporten sørger for sikker autentisering og tilgangskontroll for datautveksling mellom
 virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandlingsevne.</p>
 <p class="tableblock">Mer om Maskinporten:
 <a href="https://www.digdir.no/digitale-felleslosninger/maskinporten/869" class="bare">https://www.digdir.no/digitale-felleslosninger/maskinporten/869</a></p></td>
@@ -1835,24 +1842,8 @@ virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandling
 <td class="tableblock halign-left valign-top"><p class="tableblock">Den som innhenter eller mottar data fra andre aktører.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tokentjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som utsteder sikkerhetsbilletter. Sikkerhetsbillett utstedes basert på tildelte rettigheter og eventuelle representasjonsforhold.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Virksomhetssertifikat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En virksomhets elektroniske ID. Benyttes for å autentisere virksomheten overfor tokentjenesten.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Innhente data</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Evnen til å innhente data fra en annen aktør.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Endepunkt (adresse)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dataobjekt som representerer teknisk adresse til et API eller ressurs.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oppslag representasjons-forhold</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som benyttes av tokentjenesten for å kontrollere om det foreligger et delegert representasjonsforhold fra konsument til leverendør i autorisasjonstjenesten til Altinn.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Slå opp data gjennom et API</p></td>
@@ -1883,15 +1874,11 @@ virksomheter, maskin til maskin. Dette gir teknisk og organisatorisk samhandling
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tilganger konsument</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over hvilke API og OAUTH-scopes en virksomhet (representert ved organisasjonsnummer) skal ha tilgang til (utstedt token for).</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Torget:
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
-<p class="tableblock">Verktøykasse for deling av data:
+<p class="tableblock">[Verktøykasse for deling av data]
 Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
 autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
 <p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
@@ -1903,73 +1890,33 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 <td class="tableblock halign-left valign-top"><p class="tableblock">Del av Felles datakatalog som gir mulighet for å søke etter API-er og lese API-spesifikasjoner <a href="https://fellesdatakatalog.brreg.no/apis" class="bare">https://fellesdatakatalog.brreg.no/apis</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Adressetjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som gir mulighet til å slå opp teknisk endepunkt</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datautvekslings-tjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for utveksling av data over aktuell transportprotokoll, f.eks, gjennom asynkrone medlinger eller synkrone API-oppslag.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Samtykkeregistererings-tjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste for å innhente samtykke fra den registrert som dataene gjelder. Dette kan være en person eller en virksomhet.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Torget:
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
-<p class="tableblock">Verktøykasse for deling av data:
+<p class="tableblock">[Verktøykasse for deling av data]
 Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
 autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
 <p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
 <p class="tableblock">Mer om Altinn autorisasjon:
 <a href="https://www.altinndigital.no/produkter/styring-av-tilgang/" class="bare">https://www.altinndigital.no/produkter/styring-av-tilgang/</a></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
-<p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
-Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
-Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
-Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
-Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
-</tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="_avgi_data_løsningsmønster_uhf"><a class="anchor" href="#_avgi_data_løsningsmønster_uhf"></a>2.6.1.8. Avgi data - løsningsmønster UHF</h5>
+<h5 id="_avgi_data_løsningsmønster_uhf"><a class="anchor" href="#_avgi_data_løsningsmønster_uhf"></a>3.4.1.9. Avgi data - løsningsmønster UHF</h5>
 <div class="paragraph">
-<p>En arbeidsflyt en tilbyder av data utfører for å svare på en dataforespørsel. Tilbyder mottar forespørsel om oppslag med et aksesstoken. Klienten som forespør autentiseres og token valideres. Eventuelt mer fin-granulert tilgangskontroll utføres og data returneres. Tilgang kontrolleres kun dersom det er snakk om et sikret API.</p>
+<p>En prosessflyt en tilbyder av data utfører for å svare på en dataforespørsel. Tilbyder mottar forespørsel om oppslag med et aksesstoken. Klienten som forespør autentiseres og token valideres. Eventuelt mer fin-granulert tilgangskontroll utføres og data returneres. Tilgang kontrolleres kun dersom det er snakk om et sikret API.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="../unit-ra-datadeling-målarkitekturen/_images/Avgi%20data%20-%20løsningsmønster%20UHF.png" alt="Avgi data - løsningsmønster UHF image">
 </div>
-<div class="title">Figure 13. Avgi data - løsningsmønster UHF</div>
+<div class="title">Figure 11. Avgi data - løsningsmønster UHF</div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Elementer i view for Avgi data - løsningsmønster UHF</caption>
+<caption class="title">Table 11. Elementer i view for Avgi data - løsningsmønster UHF</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
@@ -1988,10 +1935,10 @@ Også kalt policy enforcement point (PEP).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Altinn autorisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Torget:
+<td class="tableblock halign-left valign-top"><p class="tableblock">[Torget]
 Autorisasjonskomponenten i Altinn som gir muligheter til å delegere rettigheter til andre organisasjoner eller personer. Rettigheter til bruk av autorisasjonskomponenten baserer seg på registrerte roller i Enhetsregisteret.
 Altinn autorisasjon leverer også tjenester for å registrere og kontrollere samtykke gitt av person eller virksomhet.</p>
-<p class="tableblock">Verktøykasse for deling av data:
+<p class="tableblock">[Verktøykasse for deling av data]
 Altinn autorisasjon gir teknisk samhandlingsevne ved at bruker logger inn med elektronisk ID,
 autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å ta i bruk aktuell tjeneste.</p>
 <p class="tableblock">Dersom en privatperson skal ta i bruk en tjeneste på vegne av en virksomhet, gjøres det et oppslag mot Enhetsregisteret for å bekrefte at personen har en rolle på vegne av virksomheten. Dette gir organisatorisk samhandlingsevne.</p>
@@ -2001,9 +1948,8 @@ autorisasjonskomponenten sjekker at bruker har de tilgangene som kreves for å t
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatilbyder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilbyder av data til andre aktører.</p>
-<p class="tableblock">API Eiere  (kan eie Data som API gir tilgang til, eller system som tilbyr APIet)??</p>
-<p class="tableblock">Når virksomheten tilbyr åpne data, vil det være virksomheten som eier dataene. (men det bør vel definere et domen-eier innenfor virksomheten)</p>
-<p class="tableblock">Data eier på to nivå: f. eks. studieavdelingen (er ikke dette behandlingsansvarlig?) spør studenten om de gir samtykke til å gi tilgang til data om studenten som hen eier.</p></td>
+<p class="tableblock">Datatibyder har definisjonsrett og har rettigheter til å behandle data
+Datatilbyder kan sette sammen data som tilbyderen har til et dataprodukt som tilbys datakonsumenter gjennom et API</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tilgangskontroll-tjeneste</p></td>
@@ -2024,7 +1970,7 @@ Eksempler på rettigheter kan komme av samtykker fra person eller virksomhet, el
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kontroller tilgang</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontroll og håndheving av konsumentens rettigheter til å få forespurte data.  I tillegg til "validering av sikkerhetsbillet", kan det være behov for kontroll mot virksomhetsinterne policies.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontroll og håndheving av konsumentens rettigheter til å få forespurte data.  I tillegg til "validering av sikkerhetsbillett", kan det være behov for kontroll mot virksomhetsinterne policies.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Autentisere konsument</p></td>
@@ -2047,32 +1993,29 @@ Eksempler på rettigheter kan komme av samtykker fra person eller virksomhet, el
 <td class="tableblock halign-left valign-top"><p class="tableblock">Evne til å avgi data på forespørsel. Kan omfatte tilgangsstyring.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos datatilbyder / OAuth resource server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang.
+Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll.
+Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
 <p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
-Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
-Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
-Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+<p class="tableblock">  *  Validere tilgangstoken
+  *  Beskytte mot inntrenging og andre trusler
+  * Håndtere volumbegrensninger og andre abonnementsordninger
+  * Håndheve tilgangsstyring
+  * Samle inn data om bruken av API-er
+  * Orkestrering mellom interntjenester</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_datautveksling_ved_publisering_konsumering_hendelsesbasert"><a class="anchor" href="#_datautveksling_ved_publisering_konsumering_hendelsesbasert"></a>2.6.2. Datautveksling ved publisering – konsumering (hendelsesbasert)</h4>
+<h4 id="_datautveksling_ved_publisering_konsumering_hendelsesbasert"><a class="anchor" href="#_datautveksling_ved_publisering_konsumering_hendelsesbasert"></a>3.4.2. Datautveksling ved publisering – konsumering (hendelsesbasert)</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_integrasjonsmønster_for_datadeling"><a class="anchor" href="#_integrasjonsmønster_for_datadeling"></a>2.7. Integrasjonsmønster for datadeling</h3>
+<h3 id="_integrasjonsmønster_for_datadeling"><a class="anchor" href="#_integrasjonsmønster_for_datadeling"></a>3.5. Integrasjonsmønster for datadeling</h3>
 <div class="paragraph">
 <p>*Provisjonering *(hoved IntArk mønster): Holde «server-side» kopi løpende oppdatert
 fra master ved å benytte eOppslag til å hente data fra master
@@ -2114,7 +2057,7 @@ utover vedlikeholdbarheten til API-ene.» Gartner bruker også den.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_forvaltning_av_målarkitekturen"><a class="anchor" href="#_forvaltning_av_målarkitekturen"></a>3. Forvaltning av målarkitekturen</h2>
+<h2 id="_forvaltning_av_målarkitekturen"><a class="anchor" href="#_forvaltning_av_målarkitekturen"></a>4. Forvaltning av målarkitekturen</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><mark>Tekst om overgangen fra kapabilitetene og løsningene beskrevet
@@ -2130,9 +2073,9 @@ definert ut fra en dyp forståelse av sektorenes funksjon og vil typisk
 være forholdsvis stabile over tid. Definisjon av …[mer tekst her]</p>
 </div>
 <div class="sect2">
-<h3 id="_utvikling_av_brukernære_api_og_datasett"><a class="anchor" href="#_utvikling_av_brukernære_api_og_datasett"></a>3.1. Utvikling av brukernære API og datasett</h3>
+<h3 id="_utvikling_av_brukernære_api_og_datasett"><a class="anchor" href="#_utvikling_av_brukernære_api_og_datasett"></a>4.1. Utvikling av brukernære API og datasett</h3>
 <div class="sect3">
-<h4 id="_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api"><a class="anchor" href="#_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api"></a>3.1.1. Forutsetninger for arbeid med definisjon av datasett og API</h4>
+<h4 id="_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api"><a class="anchor" href="#_forutsetninger_for_arbeid_med_definisjon_av_datasett_og_api"></a>4.1.1. Forutsetninger for arbeid med definisjon av datasett og API</h4>
 <div class="paragraph">
 <p>Vi forutsetter og bygger på en viss fremgang i arbeid med
 <a href="https://data.norge.no/guide/veileder-orden-i-eget-hus/">orden i eget hus</a>
@@ -2169,7 +2112,7 @@ aligned with the consumption», eller brukernære behov.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_rutinen_for_nye_brukernære_behov"><a class="anchor" href="#_rutinen_for_nye_brukernære_behov"></a>3.1.2. Rutinen for nye brukernære behov</h4>
+<h4 id="_rutinen_for_nye_brukernære_behov"><a class="anchor" href="#_rutinen_for_nye_brukernære_behov"></a>4.1.2. Rutinen for nye brukernære behov</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2266,7 +2209,7 @@ resultatene fra tidligere steg.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_roller_og_ansvar_for_informasjonsforvaltning"><a class="anchor" href="#_roller_og_ansvar_for_informasjonsforvaltning"></a>3.2. Roller og ansvar for informasjonsforvaltning</h3>
+<h3 id="_roller_og_ansvar_for_informasjonsforvaltning"><a class="anchor" href="#_roller_og_ansvar_for_informasjonsforvaltning"></a>4.2. Roller og ansvar for informasjonsforvaltning</h3>
 <div class="paragraph">
 <p>Vi mener at følgende roller, dekker behovene samt holder kompleksiteten
 på et håndterbart nivå når det gjelder informasjonsforvaltning ved
@@ -2639,10 +2582,8 @@ og for å vurdere om disse kan deles uten hinder av taushetsplikt.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_vedlegg_1_definisjoner"><a class="anchor" href="#_vedlegg_1_definisjoner"></a>4. Vedlegg 1 - Definisjoner</h2>
+<h2 id="_vedlegg_1_definisjoner"><a class="anchor" href="#_vedlegg_1_definisjoner"></a>5. Vedlegg 1 - Definisjoner</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_definisjoner"><a class="anchor" href="#_definisjoner"></a>4.1. Definisjoner</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -2666,12 +2607,11 @@ sites, hierarchies, and chart of accounts.  <sup class="footnote">[<a id="_footn
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
-<h2 id="_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst"><a class="anchor" href="#_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst"></a>5. Vedlegg 2 - Behov for avklaringer og utfordringer i sektorens kontekst</h2>
+<h2 id="_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst"><a class="anchor" href="#_vedlegg_2_behov_for_avklaringer_og_utfordringer_i_sektorens_kontekst"></a>6. Vedlegg 2 - Behov for avklaringer og utfordringer i sektorens kontekst</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon"><a class="anchor" href="#_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon"></a>5.1. Issues mot nasjonale felleskompontenter (Maskinporten, ID Porten og Altinn autorisasjon)</h3>
+<h3 id="_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon"><a class="anchor" href="#_issues_mot_nasjonale_felleskompontenter_maskinporten_id_porten_og_altinn_autorisasjon"></a>6.1. Issues mot nasjonale felleskompontenter (Maskinporten, ID Porten og Altinn autorisasjon)</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2731,7 +2671,7 @@ at IGA innenfor UHF sektoren vil dekke våre behov.</strong></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_issues_internt_i_uhf_sektor"><a class="anchor" href="#_issues_internt_i_uhf_sektor"></a>5.2. Issues internt i UHF sektor</h3>
+<h3 id="_issues_internt_i_uhf_sektor"><a class="anchor" href="#_issues_internt_i_uhf_sektor"></a>6.2. Issues internt i UHF sektor</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
