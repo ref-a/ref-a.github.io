@@ -44,22 +44,40 @@
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="#unit-ra:Bøker:Referansearkitektur for deling av data i høyere utdanning og forsking.adoc">Referansearkitektur for deling av data i høyere utdanning og forsking</a>
+    <a class="nav-link" href="../Bøker/Referansearkitektur%20for%20deling%20av%20data%20i%20høyere%20utdanning%20og%20forsking.html">Referansearkitektur for deling av data i høyere utdanning og forsking</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../unit-ra-datadeling-bakgrunn/Bakgrunn.html">Bakgrunn</a>
+    <a class="nav-link" href="../unit-ra-datadeling-introduksjon/Introduksjon.html">Introduksjon</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="Målarkitekturen%20for%20datadeling%20i%20høyere%20utdanning%20og%20forskning.html">Målarkitekturen for datadeling i høyere utdanning og forskning</a>
+    <a class="nav-link" href="../unit-ra-datadeling-tilnærming/Tilnærming%20til%20utvikling%20av%20referansearkitekturen.html">Tilnærming til utvikling av referansearkitekturen</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../unit-ra-datadeling-forvaltning/Forvaltning%20av%20målarkitekturen.html">Forvaltning av målarkitekturen</a>
+    <a class="nav-link" href="Datadelingsplattformen%20og%20felles%20komponentene%20i%20den.html">Datadelingsplattformen og felles komponentene i den</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../unit-ra-datadeling-definisjoner/Vedlegg%201%20-%20Definisjoner.html">Vedlegg 1 - Definisjoner</a>
+    <a class="nav-link" href="../unit-ra-datadeling-datautveksling/Datautveksling.html">Datautveksling</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../unit-ra-datadeling-issues/Vedlegg%202%20-%20Behov%20for%20avklaringer%20og%20utfordringer%20i%20sektorens%20kontekst.html">Vedlegg 2 - Behov for avklaringer og utfordringer i sektorens kontekst</a>
+    <a class="nav-link" href="../unit-ra-datadeling-rutiner/Rutiner.html">Rutiner</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-roller/Roller%20og%20ansvar%20for%20informasjonsforvaltning.html">Roller og ansvar for informasjonsforvaltning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-vedlegg-a/Vedlegg%20A;%20Definisjoner.html">Vedlegg A: Definisjoner</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-vedlegg-b/Vedlegg%20B;%20Behov%20for%20avklaringer%20og%20utfordringer%20i%20sektorens%20kontekst.html">Vedlegg B: Behov for avklaringer og utfordringer i sektorens kontekst</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-vedlegg-c/Vedlegg%20C;%20Muliggjørende%20økosystem.html">Vedlegg C: Muliggjørende økosystem</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-vedlegg-d/Vedlegg%20D;%20Behov%20og%20bruksområder.html">Vedlegg D: Behov og bruksområder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../unit-ra-datadeling-vedlegg-e/Vedlegg%20E;%20Føringer,%20pågående%20og%20videre%20arbeid.html">Vedlegg E: Føringer, pågående og videre arbeid</a>
   </li>
 </ul>
   </li>
@@ -102,46 +120,20 @@
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Felleskomponenter</h1>
 <div class="paragraph">
-<p><mark>(i sektoren hittil har «felles» betyd både at alle bruker samme instans,
-eller at alle har identiske instanser – vi må presisere hva som er
-hva etter hvert)</mark></p>
+<p>Datadelingsplattformen består av felleskomponentene beskrevet under. De fleste felleskomponenter skal realiseres som fellestjenester med en delt instans. API gateway er en funksjonell beskrivelse av en komponent som skal realiseres med instanser nær datakildene som skal tilbys.</p>
 </div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/Felleskomponenter.png" alt="Felleskomponenter image">
+</div>
+<div class="title">Figure 1. Felleskomponenter</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
 <div class="paragraph">
-<p>Innledende tekst om hva slags funksjonalitet vi trenger i
-felleskomponenter og hvorfor, motivert fra kapabilitetene over.</p>
+<p><a href="Felleskomponenter.var.1.html" class="page">Vis detaljer om elementene i diagrammet</a> (Tips: <kbd>Shift</kbd>-klikk for å åpne i nytt vindu)</p>
 </div>
-<div class="paragraph">
-<p><mark>Jeg har laget et Archimate view som heter «Felleskomponenter»,
-men jeg vil ikke ha bildet, bare teksten som står i beskrivelse av
-kompontenene</mark></p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Autentiseringstjeneste​</p>
-</li>
-<li>
-<p>API manager​</p>
-</li>
-<li>
-<p>API katalog / datakatalog ​</p>
-</li>
-<li>
-<p>API gateway​</p>
-</li>
-<li>
-<p>Autorisasjonstjeneste / Nøkkelutsteder ​</p>
-</li>
-<li>
-<p>Klient register​</p>
-</li>
-<li>
-<p>Identity Governance Administration (IGA)​</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><mark>Heidi NB: mangler komponenter for hendelsesstrømming/-publisering</mark></p>
 </div>
 </article>
 <aside class="article-aside hidden" role="navigation">

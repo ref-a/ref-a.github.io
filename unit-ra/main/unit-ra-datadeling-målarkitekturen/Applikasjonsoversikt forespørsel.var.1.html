@@ -47,7 +47,7 @@
     <a class="nav-link" href="#unit-ra:Bøker:Referansearkitektur for deling av data i høyere utdanning og forsking.adoc">Referansearkitektur for deling av data i høyere utdanning og forsking</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../unit-ra-datadeling-bakgrunn/Bakgrunn.html">Bakgrunn</a>
+    <a class="nav-link" href="#main@unit-ra:unit-ra-datadeling-bakgrunn:page$Bakgrunn.adoc">main@unit-ra:unit-ra-datadeling-bakgrunn:page$Bakgrunn.adoc</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="Målarkitekturen%20for%20datadeling%20i%20høyere%20utdanning%20og%20forskning.html">Målarkitekturen for datadeling i høyere utdanning og forskning</a>
@@ -117,7 +117,7 @@
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Gå tilbake til standardvisning ved å lukke dette vinduet (eller klikk 'tilbake')
+Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
 </td>
 </tr>
 </table>
@@ -137,98 +137,184 @@ Gå tilbake til standardvisning ved å lukke dette vinduet (eller klikk 'tilbake
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Infrastruktur</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tokentjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjeneste som utsteder sikkerhetsbilletter. Sikkerhetsbillett utstedes basert på tildelte rettigheter og eventuelle representasjonsforhold.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Tjeneste som utsteder sikkerhetsbilletter. Sikkerhetsbillett utstedes basert på tildelte rettigheter og eventuelle representasjonsforhold.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ressursportal</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Oauth2 autorisasjonstjener</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
-<p class="tableblock">Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
-<p class="tableblock">Per i dag er Scopes er grovkornet
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Autorisasjonstjeneter realiserer tilgangskontroll gjennom å utstede OpenID Connect eller OAuth 2 grants og tokens. En autorisasjonstjener er også brukt til å realisere tilgangs policy.</p>
+</div>
+<div class="paragraph">
+<p>Scope (rettighet) og Audience (identifikator eller ressurs-server f. eks. FS)</p>
+</div>
+<div class="paragraph">
+<p>Per i dag er Scopes er grovkornet
 Rich authorization requsts (ny spesifikasjon) for å utvide scope begrep i IETF
-underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p></td>
+underenhet og behandlingssted, behandlingsgrunnlag og roller jobbes det med.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF Klientregister</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Oversikt over alle klienter som er blitt tildelt tilgang til ressurser.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF API manager</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API. Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener. Ansvaret til API manager inkluderer:</p>
-<p class="tableblock">* Sentralisert API administrasjon og forvaltning av API-katalogen
-* Håndtering av registrerings- og introduksjonsprosesser for API utviklere
-* Håndtere livssyklusen til et API</p>
-<p class="tableblock">Ivareta registrering, forvaltning og og utvikling av klientrettigheter</p>
-<p class="tableblock">Hva tilbyr API av datamodell
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Administrativ komponent som kontrollerer policy og livssyklus for definisjon og forvaltning av API. Tilganger gjennom et API defineres i API manager og tildeles av autorisasjonstjener. Ansvaret til API manager inkluderer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sentralisert API administrasjon og forvaltning av API-katalogen</p>
+</li>
+<li>
+<p>Håndtering av registrerings- og introduksjonsprosesser for API utviklere</p>
+</li>
+<li>
+<p>Håndtere livssyklusen til et API</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ivareta registrering, forvaltning og og utvikling av klientrettigheter</p>
+</div>
+<div class="paragraph">
+<p>Hva tilbyr API av datamodell
 Hvordan ønsker API å sikre seg selv
-En klient må forholde seg til</p></td>
+En klient må forholde seg til</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF API katalog</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oversikt over alle API som er registrert</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Oversikt over alle API som er registrert</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Registrere API i UHF sektoren</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UHF tildel rettigheter til klienter</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Dokumentasjon</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UiX</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
-<p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+</div>
+<div class="paragraph">
+<p>Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Validere tilgangstoken</p>
+</li>
+<li>
+<p>Beskytte mot inntrenging og andre trusler</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Håndtere volumbegrensninger og andre abonnementsordninger</p>
+</li>
+<li>
+<p>Håndheve tilgangsstyring</p>
+</li>
+<li>
+<p>Samle inn data om bruken av API-er</p>
+</li>
+<li>
+<p>[orkestrering mellom interntjeneser??]</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Prinsipp fra Steiner:
 Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
 Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
 Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+</div>
+<div class="paragraph">
+<p>Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">UiO</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">API Gateway hos dataeier / OAuth resource server</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
-<p class="tableblock">Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
-<p class="tableblock">*  Validere tilgangstoken
-*  Beskytte mot inntrenging og andre trusler
-• Håndtere volumbegrensninger og andre abonnementsordninger
-• Håndheve tilgangsstyring
-• Samle inn data om bruken av API-er
-• [orkestrering mellom interntjeneser??]</p>
-<p class="tableblock">Prinsipp fra Steiner:
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>API gateway beskytter ressurser og monitorerer tilgang. Den håndhever tilgangsstyring ved å validere aksesstokens og utfører eventuell fin-granulert tilgangskontroll. Den håndhever også volumbegrenseninger og samler data om bruken av APIer (logging).</p>
+</div>
+<div class="paragraph">
+<p>Komponent som beskytter ressursene og monitorerer tilgang inklusivt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Validere tilgangstoken</p>
+</li>
+<li>
+<p>Beskytte mot inntrenging og andre trusler</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Håndtere volumbegrensninger og andre abonnementsordninger</p>
+</li>
+<li>
+<p>Håndheve tilgangsstyring</p>
+</li>
+<li>
+<p>Samle inn data om bruken av API-er</p>
+</li>
+<li>
+<p>[orkestrering mellom interntjeneser??]</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Prinsipp fra Steiner:
 Oppgaver både sikkerhetsperspektiv og forvaltningsperspektivet
 Dersom gatway skal stå for sikkerheten, MÅ VÆRE SIKKER PÅ at API ikke kan nås utenom gateway
 Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
-<p class="tableblock">Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p></td>
+</div>
+<div class="paragraph">
+<p>Det må være et tydeligvalg om hvem (gateway eller API) har ansvar for sikkerhetsmessig.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kildedata</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 </tbody>
 </table>
@@ -241,7 +327,7 @@ Noen må passe VELDIG godt på gatewayen og holder den oppdatert.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Gå tilbake til standardvisning ved å lukke dette vinduet (eller klikk 'tilbake')
+Gå tilbake til standardvisning ved å klikke 'tilbake' (eller lukk dette vinduet om det er nytt)
 </td>
 </tr>
 </table>
